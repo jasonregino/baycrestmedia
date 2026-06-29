@@ -4,6 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bay Crest Media | Content That Keeps Your Business Seen</title>
+<meta name="description" content="Done-for-you social media content for realtors, contractors, and local Bay Area businesses. We turn your ideas into ready-to-post content for every platform, every week.">
+<link rel="icon" href="logo-mark.png">
+<meta property="og:title" content="Bay Crest Media | Content That Keeps Your Business Seen">
+<meta property="og:description" content="Ready-to-post content for every platform, every week. Done-for-you social media for realtors, contractors, and local businesses.">
+<meta property="og:image" content="https://baycrestmedia.com/img/golden-gate-day.jpg">
+<meta property="og:url" content="https://baycrestmedia.com">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -38,6 +46,13 @@
   .nav-links a{transition:color .15s;}
   .nav-links a:hover{color:var(--gold);}
   @media(max-width:780px){.nav-links{display:none;}}
+  .hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;margin:-8px;}
+  .hamburger span{width:24px;height:2px;background:#fff;border-radius:2px;transition:background .4s;}
+  header.solid .hamburger span{background:var(--navy);}
+  .mobile-menu{display:none;position:absolute;top:100%;left:0;right:0;background:rgba(253,252,250,.98);backdrop-filter:blur(12px);box-shadow:0 14px 30px -12px rgba(11,37,69,.35);flex-direction:column;padding:8px 32px 22px;border-top:1px solid var(--line);}
+  .mobile-menu.open{display:flex;}
+  .mobile-menu a{padding:13px 0;font-size:13px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--navy);border-bottom:1px solid var(--line);}
+  @media(max-width:780px){.hamburger{display:flex;}}
   .btn{display:inline-flex;align-items:center;gap:9px;font-family:var(--sans);font-weight:600;letter-spacing:.4px;border-radius:2px;transition:all .2s;cursor:pointer;border:none;}
   .btn-gold{background:var(--gold);color:var(--navy);}
   .btn-gold:hover{background:var(--gold-light);transform:translateY(-2px);}
@@ -134,6 +149,8 @@
   .founding{max-width:1000px;margin:28px auto 0;text-align:center;font-family:var(--serif);font-size:22px;color:var(--navy);}
   .founding b{color:var(--gold);font-style:italic;}
   .terms{text-align:center;color:var(--muted);font-size:13.5px;margin-top:22px;letter-spacing:.2px;}
+  .plan-cta{display:block;text-align:center;margin-top:26px;padding:13px;background:var(--gold);color:var(--navy);font-weight:700;font-size:12.5px;letter-spacing:1px;text-transform:uppercase;border-radius:4px;transition:background .2s,transform .15s;}
+  .plan-cta:hover{background:var(--gold-light);transform:translateY(-1px);}
 
   /* CTA */
   .cta{position:relative;color:#fff;text-align:center;overflow:hidden;}
@@ -187,7 +204,16 @@
       <a href="#get">What You Get</a>
       <a href="#plans">Plans</a>
     </nav>
-    <a href="#intake" class="btn btn-gold btn-sm">Free Sample</a>
+    <div style="display:flex;align-items:center;gap:14px;">
+      <a href="#intake" class="btn btn-gold btn-sm">Free Sample</a>
+      <button class="hamburger" id="hamb" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#how">How It Works</a>
+    <a href="#about">About</a>
+    <a href="#get">What You Get</a>
+    <a href="#plans">Plans</a>
   </div>
 </header>
 
@@ -197,12 +223,13 @@
     <span class="loc">San Francisco Bay Area</span>
     <h1>Your business deserves to be <em>seen.</em></h1>
     <p class="sub">We turn your ideas into polished, ready-to-post content for every platform, every week. No agencies. No complicated tools.</p>
+    <p style="color:var(--gold-light);font-size:14px;letter-spacing:.5px;margin-bottom:34px;">For realtors, contractors, and local Bay Area businesses.</p>
     <div class="hero-cta">
       <a href="#intake" class="btn btn-gold btn-lg">Book a free sample</a>
       <a href="#plans" class="btn btn-line btn-lg">View plans</a>
     </div>
   </div>
-  <div class="scrollcue"><span>Scroll</span><span class="ln"></span></div>
+  <a href="#how" class="scrollcue"><span>Scroll</span><span class="ln"></span></a>
 </section>
 
 <section class="statement">
@@ -243,8 +270,8 @@
     </div>
     <div class="body reveal">
       <p>Born and raised on the Peninsula in the Bay Area, and I never left. I built my career here, and this has always been home.</p>
-      <p>After 25 years in tech, I learned two things that matter for you: how to make the right tools do the heavy lifting, and how to show up consistently when it counts.</p>
-      <p>I started Bay Crest Media because I kept seeing talented small business owners struggle to stay visible online. Not for lack of skill or passion, but because they never had the time to turn what they do into steady content.</p>
+      <p>After 25 years in tech, I learned how to build systems that run without constant babysitting. I bring that same thinking to your content: reliable, consistent, and off your plate.</p>
+      <p>I started Bay Crest Media because I kept seeing contractors, realtors, and busy service business owners struggle to stay visible online. Not for lack of skill or passion, but because they never had the time to turn what they do into steady content.</p>
       <p>That is where I come in. You send the raw stuff, a voice memo, a few photos, a quick thought. I turn it into polished content that keeps your business visible and credible, week after week.</p>
       <p>When you work with Bay Crest Media, you work directly with me. No layers, no handoffs, no surprises. Just a reliable partner who gets your business and is invested in helping it grow.</p>
     </div>
@@ -282,18 +309,21 @@
         <div class="price">$2,500<small>/mo</small></div>
         <p class="blurb">Fully managed. You just run your business.</p>
         <ul><li>We write all your content</li><li>We schedule everything</li><li>We post for you</li><li>Truly hands-off</li></ul>
+        <a href="#intake" class="plan-cta">Get started</a>
       </div>
       <div class="plan reveal">
         <h3>Content Engine</h3>
         <div class="price">$2,000<small>/mo</small></div>
         <p class="blurb">We deliver, you publish, we plan together.</p>
         <ul><li>Weekly content delivered</li><li>Written in your voice</li><li>Monthly strategy call</li><li>You review and post</li></ul>
+        <a href="#intake" class="plan-cta">Get started</a>
       </div>
       <div class="plan reveal">
         <h3>Starter</h3>
         <div class="price">$997<small>/mo</small></div>
         <p class="blurb">Core weekly content, straight to your inbox.</p>
         <ul><li>Content for your main platforms</li><li>Delivered every week</li><li>Ready to post</li><li>You publish on your schedule</li></ul>
+        <a href="#intake" class="plan-cta">Get started</a>
       </div>
     </div>
     <p class="terms reveal">A content service, not an ads agency. We keep you visible and credible. We do not run paid ads or guarantee leads.</p>
@@ -317,8 +347,9 @@
       <span class="label">No time for a call?</span>
       <h2>Send your details, we'll do the homework</h2>
       <p>Prefer to skip the call for now? Tell us about your business and share your socials. We'll review everything in advance and come back with a free sample built for you.</p>
+      <p style="margin-top:14px;font-size:15px;"><b style="color:var(--navy);">Realtor?</b> <a href="sample-reel.html" style="color:var(--gold);font-weight:700;border-bottom:1px solid var(--gold);">Get a free sample reel of one of your listings &rarr;</a></p>
     </div>
-    <form id="intakeForm" class="reveal">
+    <form id="intakeForm" class="reveal" method="POST" action="https://api.web3forms.com/submit">
       <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
       <input type="hidden" name="subject" value="New Bay Crest Media inquiry">
       <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
@@ -331,7 +362,7 @@
         <div class="field"><label>Website</label><input name="website" placeholder="yourwebsite.com"></div>
         <div class="field"><label>Social handles or links</label><input name="socials" placeholder="Instagram, Facebook, LinkedIn..."></div>
       </div>
-      <div class="field"><label>What are you trying to do?</label><textarea name="goals" placeholder="What do you want to post about, what is the goal, anything you feel stuck on..."></textarea></div>
+      <div class="field"><label>What's your goal with social media?</label><textarea name="goals" placeholder="What do you want to post about, what is the goal, anything you feel stuck on..."></textarea></div>
       <div class="submit"><button type="submit" class="btn btn-gold btn-lg">Send my details</button></div>
       <div class="formnote">No pressure and no obligation. We'll review and reach out with a free sample.</div>
       <div class="formmsg" id="formMsg"></div>
@@ -353,6 +384,11 @@
   addEventListener('scroll',onScroll); onScroll();
   const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.15});
   document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(Math.min(i%3,2)*90)+'ms';io.observe(el);});
+
+  // Mobile menu
+  const hamb=document.getElementById('hamb'), mob=document.getElementById('mobileMenu');
+  if(hamb){hamb.addEventListener('click',()=>mob.classList.toggle('open'));
+    mob.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>mob.classList.remove('open')));}
 
   // Intake form submit (Web3Forms)
   const form=document.getElementById('intakeForm');

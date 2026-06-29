@@ -78,7 +78,7 @@
     <p>Takes about <b>3 minutes</b>. There are no wrong answers, and "No preference" is always a fine choice. The more you tell us, the more your reels will feel like <b>you</b>.</p>
   </div>
 
-  <form id="styleForm">
+  <form id="styleForm" method="POST" action="https://api.web3forms.com/submit">
     <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
     <input type="hidden" name="subject" value="New Agent Reel Style Preferences">
     <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
@@ -88,7 +88,7 @@
       <span class="section-label">Section A</span>
       <h2>Agent Information</h2>
       <div class="field"><label>Full name <span class="note">(exactly as it should appear on reels)</span></label><input type="text" name="agent_name" placeholder="e.g. Sarah Mitchell" required></div>
-      <div class="field"><label>DRE License Number <span class="note">(required on every reel)</span></label><input type="text" name="dre_number" placeholder="e.g. DRE #01234567" required></div>
+      <div class="field"><label>Real estate license number <span class="note">(we show the license number and/or brokerage your state requires)</span></label><input type="text" name="license_number" placeholder="e.g. DRE #01234567 in CA, or your state license number" required></div>
       <div class="field"><label>Brokerage name <span class="note">(optional, include if you want it on screen)</span></label><input type="text" name="brokerage_name" placeholder="e.g. Compass, Keller Williams, eXp Realty"></div>
       <div class="field"><label>Email</label><input type="email" name="email" placeholder="agent@email.com" required></div>
       <div class="field"><label>Phone <span class="note">(optional, for CTA if you want it shown)</span></label><input type="tel" name="phone" placeholder="(555) 555-5555"></div>
@@ -161,13 +161,13 @@
     <div class="card">
       <span class="section-label">Section F</span>
       <h2>Music Preference</h2>
-      <div class="callout"><b>Note:</b> Trending songs are always added natively when posting (not baked into the video) to avoid copyright muting. This is about background music style when music is in the file itself.</div>
+      <div class="callout"><b>Note:</b> We always add clean, copyright-free background music so your reel is ready to post the moment you get it. Prefer a trending sound? You can swap it right inside Instagram or TikTok, it takes a few taps. This just tells us the mood to start with.</div>
       <div class="field" style="margin-top:14px;">
         <label>Music mood</label>
         <div class="choice-grid">
           <label class="choice" onclick="selChoice(this,'music')"><input type="radio" name="music" value="Upbeat & Light"><div class="title">Upbeat &amp; Light</div><div class="desc">Acoustic guitar, light piano. Positive, accessible.</div></label>
           <label class="choice" onclick="selChoice(this,'music')"><input type="radio" name="music" value="Cinematic & Dramatic"><div class="title">Cinematic &amp; Dramatic</div><div class="desc">Strings, sweeping feel. Luxury or higher-end listings.</div></label>
-          <label class="choice" onclick="selChoice(this,'music')"><input type="radio" name="music" value="No Background Music"><div class="title">No Background Music</div><div class="desc">Visuals and text only. Add trending audio when posting.</div></label>
+          <label class="choice" onclick="selChoice(this,'music')"><input type="radio" name="music" value="No music (I'll add my own)"><div class="title">No music, I'll add my own</div><div class="desc">We deliver a clean silent file. You add the audio when posting.</div></label>
           <label class="choice" onclick="selChoice(this,'music')"><input type="radio" name="music" value="No Preference"><div class="title">No Preference</div><div class="desc">We pick based on the listing.</div></label>
         </div>
       </div>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bay Crest Media — Free Sample Reel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#0b2545;--navy-2:#13315c;--gold:#c8a04b;--gold-light:#e3c378;--ink:#1c2430;--muted:#5b6675;--paper:#eef2f7;--line:#e2e8f1;--green:#1a7f5a;--green-bg:#f0faf5;
+    --serif:'Cormorant Garamond',Georgia,serif;--sans:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.7;-webkit-font-smoothing:antialiased;}
+  a{text-decoration:none;color:inherit;}
+  .topbar{background:#fff;border-bottom:1px solid var(--line);}
+  .topbar .inner{max-width:620px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:10px;}
+  .topbar img{height:34px;width:auto;}
+  .topbar .name{font-weight:800;letter-spacing:1px;text-transform:uppercase;font-size:14px;color:var(--navy);}
+  .page{max-width:620px;margin:0 auto;padding:0 20px 80px;}
+  .masthead{background:linear-gradient(135deg,var(--navy),var(--navy-2));color:#fff;border-radius:0 0 20px 20px;padding:40px 42px;text-align:center;}
+  .masthead .eyebrow{color:var(--gold-light);letter-spacing:3px;text-transform:uppercase;font-size:12px;font-weight:700;}
+  .masthead h1{font-family:var(--serif);font-size:42px;font-weight:700;letter-spacing:-.5px;margin:10px 0 12px;line-height:1.05;}
+  .masthead p{color:#cdd8e8;font-size:16px;max-width:440px;margin:0 auto;}
+  .steps{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:18px;}
+  .steps span{background:#fff;border:1px solid var(--line);border-radius:30px;padding:7px 16px;font-size:13.5px;color:var(--navy);font-weight:600;}
+  .steps b{color:var(--gold);}
+  .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px 32px;margin-top:18px;box-shadow:0 4px 16px rgba(11,37,69,.05);}
+  .field{margin:16px 0;}
+  label{display:block;font-weight:700;color:var(--navy);font-size:15px;margin-bottom:5px;}
+  label .note{font-weight:400;color:var(--muted);font-size:13.5px;margin-left:4px;}
+  input,textarea{width:100%;padding:12px 14px;border:1px solid #cdd5e0;border-radius:8px;font-size:15px;font-family:inherit;color:var(--ink);background:#fff;transition:border .15s,box-shadow .15s;}
+  input:focus,textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(200,160,75,.15);}
+  textarea{min-height:70px;resize:vertical;}
+  .photo-note{background:var(--green-bg);border-left:4px solid var(--green);border-radius:0 10px 10px 0;padding:13px 18px;margin:6px 0 0;font-size:14px;}
+  .photo-note b{color:var(--navy);}
+  .submit-area{text-align:center;margin-top:26px;}
+  .btn{background:var(--gold);color:var(--navy);border:none;font-family:inherit;font-weight:800;font-size:16px;padding:16px 40px;border-radius:10px;cursor:pointer;letter-spacing:.3px;transition:background .2s,transform .15s;}
+  .btn:hover{background:var(--gold-light);transform:translateY(-2px);}
+  .btn:disabled{opacity:.6;cursor:default;transform:none;}
+  .fineprint{font-size:13px;color:var(--muted);margin-top:14px;}
+  .formmsg{display:none;text-align:center;padding:18px 20px;border-radius:10px;background:var(--green-bg);border:1px solid #cfe9d6;color:#2c6b43;font-weight:600;margin-top:18px;font-size:15.5px;}
+  .formmsg.err{background:#fbeef0;border-color:#f0ccd2;color:#a23b4a;}
+  .hp{position:absolute;left:-9999px;}
+  footer{text-align:center;color:var(--muted);font-size:13px;margin-top:28px;}
+  @media(max-width:560px){.masthead{padding:30px 24px;}.masthead h1{font-size:34px;}.card{padding:22px 20px;}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a class="inner" href="https://baycrestmedia.com">
+    <img src="logo-mark.png" alt="Bay Crest Media">
+    <span class="name">Bay Crest Media</span>
+  </a>
+</div>
+
+<div class="page">
+
+  <div class="masthead">
+    <div class="eyebrow">For Real Estate Agents</div>
+    <h1>Get a free sample reel</h1>
+    <p>Send us one of your listings and we'll turn it into a polished reel for you. Free, no commitment. See exactly what your content could look like.</p>
+  </div>
+
+  <div class="steps">
+    <span><b>1.</b> Share a listing</span>
+    <span><b>2.</b> We build your reel</span>
+    <span><b>3.</b> You see the quality</span>
+  </div>
+
+  <form id="reelForm" method="POST" action="https://api.web3forms.com/submit">
+    <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+    <input type="hidden" name="subject" value="New Free Sample Reel Request">
+    <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
+
+    <div class="card">
+      <div class="field"><label>Your name</label><input type="text" name="name" placeholder="e.g. Sarah Mitchell" required></div>
+      <div class="field"><label>Email</label><input type="email" name="email" placeholder="agent@email.com" required></div>
+      <div class="field"><label>Phone <span class="note">(optional)</span></label><input type="tel" name="phone" placeholder="(555) 555-5555"></div>
+      <div class="field"><label>Area you serve <span class="note">(optional)</span></label><input type="text" name="area" placeholder="e.g. Oakland / East Bay"></div>
+
+      <div class="field">
+        <label>Your listing</label>
+        <input type="text" name="listing_link" placeholder="Paste a Zillow, Redfin, MLS, or website listing link" required>
+        <div class="photo-note"><b>For the best reel, we use at least 8 photos.</b> A listing link already has plenty, that's the easiest option. Prefer to send photos directly? Email at least 8 to <b>jason@baycrestmedia.com</b>.</div>
+      </div>
+
+      <div class="field"><label>Any look you're going for? <span class="note">(optional)</span></label><textarea name="style_note" placeholder="e.g. clean and modern, or luxury and cinematic. Leave blank and we'll pick what fits the home."></textarea></div>
+    </div>
+
+    <div class="submit-area">
+      <button type="submit" class="btn">Send my listing, get my reel</button>
+      <div class="fineprint">We'll send your sample reel back within a few days. If you love it, the clean (un-watermarked) version is yours.</div>
+      <div class="formmsg" id="formMsg"></div>
+    </div>
+  </form>
+
+  <footer>Bay Crest Media &middot; Social media content for real estate agents</footer>
+</div>
+
+<script>
+  const form=document.getElementById('reelForm');
+  form.addEventListener('submit', async (e)=>{
+    e.preventDefault();
+    const msg=document.getElementById('formMsg');
+    const btn=form.querySelector('button[type="submit"]');
+    btn.disabled=true; const orig=btn.textContent; btn.textContent='Sending...';
+    try{
+      const res=await fetch('https://api.web3forms.com/submit',{method:'POST',body:new FormData(form)});
+      const out=await res.json();
+      if(out.success){form.reset();msg.className='formmsg';msg.style.display='block';msg.textContent='Got it, thank you. We will build your sample reel and email it to you within a few days.';msg.scrollIntoView({block:'center'});}
+      else{throw new Error(out.message||'error');}
+    }catch(err){msg.className='formmsg err';msg.style.display='block';msg.textContent='Something went wrong. Please email jason@baycrestmedia.com directly with your listing.';}
+    btn.disabled=false; btn.textContent=orig;
+  });
+</script>
+</body>
+</html>
