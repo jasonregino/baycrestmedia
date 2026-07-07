@@ -154,20 +154,22 @@
   .terms{text-align:center;color:var(--muted);font-size:13.5px;margin-top:22px;letter-spacing:.2px;}
   .plan-cta{display:block;text-align:center;margin-top:26px;padding:13px;background:var(--gold);color:var(--navy);font-weight:700;font-size:12.5px;letter-spacing:1px;text-transform:uppercase;border-radius:4px;transition:background .2s,transform .15s;}
   .plan-cta:hover{background:var(--gold-light);transform:translateY(-1px);}
-  .website-offer{max-width:1000px;margin:54px auto 0;background:#fff;border:1px solid var(--line);border-top:3px solid var(--gold);padding:40px 44px;display:grid;grid-template-columns:1.5fr 1fr;gap:40px;align-items:center;box-shadow:0 20px 50px -34px rgba(11,37,69,.4);}
-  @media(max-width:820px){.website-offer{grid-template-columns:1fr;gap:26px;padding:32px 28px;text-align:center;}}
+  .website-offer{max-width:1000px;margin:54px auto 0;background:#fff;border:1px solid var(--line);border-top:3px solid var(--gold);padding:40px 44px;box-shadow:0 20px 50px -34px rgba(11,37,69,.4);}
+  @media(max-width:820px){.website-offer{padding:32px 26px;}}
   .website-offer .wo-label{font-family:var(--sans);text-transform:uppercase;letter-spacing:3px;font-size:11px;font-weight:600;color:var(--gold);}
   .website-offer h3{font-family:var(--serif);font-weight:600;font-size:30px;color:var(--navy);margin:10px 0 12px;letter-spacing:-.3px;}
-  .website-offer p{color:var(--muted);font-size:15.5px;line-height:1.65;}
-  .website-offer ul{list-style:none;margin-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:8px 22px;}
-  @media(max-width:820px){.website-offer ul{grid-template-columns:1fr;max-width:280px;margin-left:auto;margin-right:auto;text-align:left;}}
-  .website-offer li{font-size:14px;color:var(--ink);padding-left:18px;position:relative;}
-  .website-offer li:before{content:"";position:absolute;left:0;top:8px;width:7px;height:7px;border-radius:50%;background:var(--gold);}
-  .website-offer .wo-price{text-align:center;}
-  .website-offer .wo-price .amt{font-family:var(--serif);font-size:46px;font-weight:600;color:var(--navy);line-height:1;letter-spacing:-1px;}
-  .website-offer .wo-price .amt small{font-family:var(--sans);font-size:13.5px;font-weight:500;color:var(--muted);display:block;margin-top:8px;letter-spacing:0;}
-  .website-offer .wo-price .care{font-size:14px;color:var(--muted);margin-top:8px;}
-  .website-offer .wo-price .care b{color:var(--navy);}
+  .website-offer .wo-head p{color:var(--muted);font-size:15.5px;line-height:1.65;max-width:660px;}
+  .wo-tiers{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin:28px 0 24px;}
+  @media(max-width:640px){.wo-tiers{grid-template-columns:1fr;}}
+  .wo-tier{border:1px solid var(--line);border-radius:8px;padding:22px 24px;background:var(--bg);}
+  .wo-tier-name{font-family:var(--sans);text-transform:uppercase;letter-spacing:1.5px;font-size:12px;font-weight:700;color:var(--gold);}
+  .wo-tier-price{font-family:var(--serif);font-size:40px;font-weight:600;color:var(--navy);line-height:1;letter-spacing:-1px;margin:8px 0 12px;}
+  .wo-tier p{color:var(--muted);font-size:14.5px;line-height:1.6;}
+  .wo-foot{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:22px;}
+  .wo-foot span{color:var(--ink);font-size:14.5px;max-width:560px;}
+  .wo-foot span b{color:var(--navy);}
+  .wo-foot .plan-cta{margin-top:0;flex:0 0 auto;padding-left:34px;padding-right:34px;}
+  @media(max-width:640px){.wo-foot{flex-direction:column;align-items:stretch;text-align:center;}.wo-foot .plan-cta{width:100%;}}
 
   /* CTA */
   .cta{position:relative;color:#fff;text-align:center;overflow:hidden;}
@@ -420,22 +422,26 @@
     <p class="terms reveal">A content service, not an ads agency. We keep you visible and credible. We do not run paid ads or guarantee leads.</p>
 
     <div class="website-offer reveal">
-      <div class="wo-main">
+      <div class="wo-head">
         <span class="wo-label">Also from Bay Crest Media</span>
         <h3>Need a website, too?</h3>
-        <p>A custom site we build, host, and keep current, so it never goes dark on you. We handle the design, the hosting, the security, and the updates. It is yours to keep, and we keep it running.</p>
-        <ul>
-          <li>Custom design, built for you</li>
-          <li>Fast and mobile-friendly</li>
-          <li>Hosting, domain, SSL, and updates included</li>
-          <li>Yours to keep</li>
-        </ul>
+        <p>A custom site we build, host, and keep current, so it never goes dark on you. Fast, mobile-friendly, and built to convert, with design, hosting, security, and updates all handled. Yours to keep.</p>
       </div>
-      <div class="wo-price">
-        <div class="amt">$1,497<small>standard build</small></div>
-        <div class="care">or <b>$2,497</b> premium, multi-section</div>
-        <div class="care">then <b>$97/mo</b> care &amp; hosting</div>
-        <a href="#intake" class="plan-cta" style="margin-top:20px;">Get a quote</a>
+      <div class="wo-tiers">
+        <div class="wo-tier">
+          <div class="wo-tier-name">Standard</div>
+          <div class="wo-tier-price">$1,497</div>
+          <p>One clean, focused page built to convert. Your services, story, reviews, and contact, done right.</p>
+        </div>
+        <div class="wo-tier">
+          <div class="wo-tier-name">Premium</div>
+          <div class="wo-tier-price">$2,497</div>
+          <p>A fuller multi-page site. More sections, more content, and custom design work.</p>
+        </div>
+      </div>
+      <div class="wo-foot">
+        <span>Every site includes <b>$97/mo</b> care &amp; hosting: domain, SSL, and updates, so it never goes down again.</span>
+        <a href="#intake" class="plan-cta">Get a quote</a>
       </div>
     </div>
   </div>
