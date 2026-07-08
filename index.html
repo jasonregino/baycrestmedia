@@ -173,13 +173,15 @@
   .website-offer .wo-label{font-family:var(--sans);text-transform:uppercase;letter-spacing:3px;font-size:11px;font-weight:600;color:var(--gold);}
   .website-offer h3{font-family:var(--serif);font-weight:600;font-size:30px;color:var(--navy);margin:10px 0 12px;letter-spacing:-.3px;}
   .website-offer .wo-head p{color:var(--muted);font-size:15.5px;line-height:1.65;max-width:660px;}
-  .wo-tiers{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin:28px 0 24px;}
+  .wo-tiers{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin:0;}
+  .wo-subhead{font-family:var(--sans);text-transform:uppercase;letter-spacing:2px;font-size:11px;font-weight:700;color:var(--navy);opacity:.55;margin:24px 0 12px;}
   @media(max-width:640px){.wo-tiers{grid-template-columns:1fr;}}
   .wo-tier{border:1px solid var(--line);border-radius:8px;padding:22px 24px;background:var(--bg);}
   .wo-tier-name{font-family:var(--sans);text-transform:uppercase;letter-spacing:1.5px;font-size:12px;font-weight:700;color:var(--gold);}
   .wo-tier-price{font-family:var(--serif);font-size:40px;font-weight:600;color:var(--navy);line-height:1;letter-spacing:-1px;margin:8px 0 12px;}
   .wo-tier p{color:var(--muted);font-size:14.5px;line-height:1.6;}
-  .wo-foot{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:22px;}
+  .wo-tier p em{font-style:italic;color:var(--navy);font-weight:600;}
+  .wo-foot{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:22px;margin-top:24px;}
   .wo-foot span{color:var(--ink);font-size:14.5px;max-width:560px;}
   .wo-foot span b{color:var(--navy);}
   .wo-foot .plan-cta{margin-top:0;flex:0 0 auto;padding-left:34px;padding-right:34px;}
@@ -441,6 +443,7 @@
         <h3>Need a website, too?</h3>
         <p>A custom site we build, host, and keep current, so it never goes dark on you. Fast, mobile-friendly, and built to convert, with design, hosting, security, and updates all handled. Yours to keep.</p>
       </div>
+      <div class="wo-subhead">The build, one-time</div>
       <div class="wo-tiers">
         <div class="wo-tier">
           <div class="wo-tier-name">Standard</div>
@@ -453,8 +456,23 @@
           <p>A fuller multi-page site. More sections, more content, and custom design work.</p>
         </div>
       </div>
+
+      <div class="wo-subhead">Then a monthly care plan</div>
+      <div class="wo-tiers">
+        <div class="wo-tier">
+          <div class="wo-tier-name">Basic Care</div>
+          <div class="wo-tier-price">$97<span style="font-family:var(--sans);font-size:15px;font-weight:500;color:var(--muted);">/mo</span></div>
+          <p><em>Keep the lights on.</em> Hosting, uptime, domain and DNS, SSL, security updates, your form and lead alerts kept working, and minor edits like text, phone, or hours.</p>
+        </div>
+        <div class="wo-tier">
+          <div class="wo-tier-name">Premium Care</div>
+          <div class="wo-tier-price">$149<span style="font-family:var(--sans);font-size:15px;font-weight:500;color:var(--muted);">/mo</span></div>
+          <p><em>Your on-call web person.</em> Everything in Basic, plus real content updates (new photos, services, price or menu changes), seasonal work like holiday hours and promo banners, small design improvements, about an hour of updates a month, and priority turnaround.</p>
+        </div>
+      </div>
+
       <div class="wo-foot">
-        <span>Every site includes a care plan: <b>Basic $97/mo</b> (hosting, SSL, minor edits) or <b>Premium $149/mo</b> (adds about an hour of content updates a month, plus priority).</span>
+        <span>The build is one-time; the care plan is monthly. Not sure which fits? We'll help you pick on a quick call.</span>
         <a href="#intake" class="plan-cta">Get a quote</a>
       </div>
     </div>
