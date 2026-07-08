@@ -283,6 +283,16 @@
   .nextsteps .nsn{width:44px;height:44px;border-radius:50%;background:var(--navy);color:var(--gold-light);font-family:var(--serif);font-size:22px;font-weight:600;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;}
   .nextsteps .ns h4{font-size:16px;color:var(--navy);margin-bottom:6px;}
   .nextsteps .ns p{color:var(--muted);font-size:14.5px;line-height:1.6;}
+  /* Navy pricing section + interactive card float */
+  .plans{background:var(--navy);}
+  .plans .head h2{color:#fff;}
+  .plans .head p{color:#c3d0e4;}
+  .plans > .wrap > .wo-subhead{color:#fff;opacity:.65;}
+  .plans .terms{color:#9fb2cf;}
+  .plan.feat{background:#13315c;border:1px solid var(--gold-light);}
+  .wo-tier{transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;}
+  .wo-tier:hover{transform:translateY(-6px);box-shadow:0 18px 40px -22px rgba(0,0,0,.55);border-color:var(--gold);}
+  .plan:hover{border-color:var(--gold);box-shadow:0 24px 50px -24px rgba(0,0,0,.5);}
 </style>
 </head>
 <body>
@@ -672,6 +682,31 @@
     }catch(err){msg.className='formmsg err';msg.style.display='block';msg.textContent='Something went wrong. Please email jason@baycrestmedia.com directly.';}
     btn.disabled=false; btn.textContent=orig;
   });}
+
+  // Pricing cards: click a card or its button to prefill the intake form + scroll
+  function bcmPrefill(el){
+    var form=document.getElementById('intakeForm'); if(!form) return;
+    var sel=form.querySelector('select[name="service"]');
+    var goals=form.querySelector('textarea[name="goals"]');
+    var service='', tier='';
+    var offer=el.closest('.website-offer'), plan=el.closest('.plan');
+    if(offer){
+      var label=(offer.querySelector('.wo-label')||{}).textContent||'';
+      if(/review/i.test(label)) service='Google review management';
+      else if(/website/i.test(label)) service='A new website';
+      var t=el.closest('.wo-tier'); if(t){var n=t.querySelector('.wo-tier-name'); if(n) tier=n.textContent.trim();}
+    } else if(plan){
+      service='Social media content';
+      var h=plan.querySelector('h3'); if(h) tier=h.textContent.trim();
+    }
+    if(sel && service) sel.value=service;
+    if(goals && tier && !goals.value.trim()) goals.value='Interested in the '+tier+' option.';
+  }
+  document.querySelectorAll('.wo-tier, .plan').forEach(function(card){
+    card.style.cursor='pointer';
+    card.addEventListener('click',function(e){ bcmPrefill(card); if(!e.target.closest('a')) document.getElementById('intake').scrollIntoView({behavior:'smooth'}); });
+  });
+  document.querySelectorAll('.plan-cta').forEach(function(btn){ btn.addEventListener('click',function(){ bcmPrefill(btn); }); });
 </script>
 </body>
 </html>
