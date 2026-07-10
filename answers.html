@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Answers | Bay Crest Media</title>
+<meta name="description" content="Ask a question and get a straight answer about websites, Google reviews, pricing, and working with Bay Crest Media.">
+<link rel="icon" href="logo-mark.png">
+<link rel="canonical" href="https://www.baycrestmedia.com/answers.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0b2545;--navy-deep:#081a33;--gold:#c8a04b;--gold-light:#e6c885;
+    --ink:#17202f;--muted:#62707f;--bg:#fdfcfa;--line:#eae4d8;
+    --serif:'Cormorant Garamond',Georgia,serif;
+    --sans:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.7;-webkit-font-smoothing:antialiased;}
+  a{text-decoration:none;color:inherit;}
+  .wrap{max-width:860px;margin:0 auto;padding:0 24px;}
+
+  /* Top bar */
+  .topbar{border-bottom:1px solid var(--line);background:#fff;}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;}
+  .brand{display:flex;align-items:center;gap:11px;}
+  .brand .chip{width:38px;height:38px;border-radius:10px;background:var(--navy);display:flex;align-items:center;justify-content:center;}
+  .brand .chip img{height:24px;width:auto;}
+  .brand .name{font-family:var(--sans);font-weight:700;letter-spacing:1.4px;text-transform:uppercase;font-size:14px;color:var(--navy);}
+  .back{font-size:12.5px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);}
+  .back:hover{color:var(--gold);}
+
+  /* Hero */
+  .hero{background:var(--navy);color:#fff;text-align:center;padding:70px 0 30px;position:relative;}
+  .hero:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 0,rgba(200,160,75,.16),transparent 60%);pointer-events:none;}
+  .hero .eyebrow{color:var(--gold-light);letter-spacing:3.5px;text-transform:uppercase;font-size:12px;font-weight:600;margin-bottom:16px;}
+  .hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(34px,6vw,56px);line-height:1.05;letter-spacing:-.5px;}
+  .hero p{color:#c3d0e4;max-width:520px;margin:14px auto 0;font-size:16.5px;}
+
+  /* Search */
+  .searchwrap{position:sticky;top:0;z-index:20;background:var(--navy);padding:22px 0 26px;}
+  .searchbox{position:relative;max-width:620px;margin:0 auto;}
+  .searchbox svg{position:absolute;left:20px;top:50%;transform:translateY(-50%);width:20px;height:20px;stroke:var(--muted);pointer-events:none;}
+  .searchbox input{width:100%;font-family:var(--sans);font-size:17px;padding:17px 20px 17px 52px;border:none;border-radius:12px;background:#fff;color:var(--ink);box-shadow:0 18px 40px -20px rgba(0,0,0,.5);}
+  .searchbox input:focus{outline:2px solid var(--gold);}
+  .searchbox input::placeholder{color:#9aa6b4;}
+
+  .chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;max-width:620px;margin:16px auto 0;}
+  .chip-btn{font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase;padding:8px 15px;border-radius:30px;border:1px solid rgba(255,255,255,.28);background:transparent;color:#c3d0e4;cursor:pointer;transition:all .15s;}
+  .chip-btn:hover{border-color:var(--gold-light);color:#fff;}
+  .chip-btn.active{background:var(--gold);border-color:var(--gold);color:var(--navy);}
+
+  /* Results */
+  main{padding:40px 0 80px;min-height:40vh;}
+  .count{color:var(--muted);font-size:13px;letter-spacing:.3px;margin-bottom:20px;text-align:center;}
+
+  .cat-head{font-family:var(--sans);font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);font-weight:700;margin:34px 0 12px;padding-bottom:8px;border-bottom:1px solid var(--line);}
+  .cat-head:first-child{margin-top:0;}
+
+  details.qa{border:1px solid var(--line);border-radius:10px;background:#fff;margin-bottom:10px;overflow:hidden;transition:border-color .15s,box-shadow .15s;}
+  details.qa[open]{border-color:#dccfab;box-shadow:0 14px 34px -24px rgba(11,37,69,.4);}
+  details.qa summary{list-style:none;cursor:pointer;padding:17px 48px 17px 20px;position:relative;font-weight:600;color:var(--navy);font-size:15.5px;}
+  details.qa summary::-webkit-details-marker{display:none;}
+  details.qa summary:after{content:"+";position:absolute;right:20px;top:15px;font-size:22px;font-weight:400;color:var(--gold);transition:transform .2s;line-height:1;}
+  details.qa[open] summary:after{content:"\2013";}
+  details.qa .ans{padding:0 20px 20px;color:var(--ink);font-size:15px;line-height:1.7;}
+  details.qa .tag{display:inline-block;font-size:10.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:8px;}
+
+  /* Search-result card (answer shown) */
+  .card{border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:10px;background:#fff;padding:20px 22px;margin-bottom:12px;}
+  .card .tag{display:inline-block;font-size:10.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:8px;}
+  .card .q{font-weight:700;color:var(--navy);font-size:16px;margin-bottom:8px;}
+  .card .a{color:var(--ink);font-size:15px;line-height:1.7;}
+
+  .empty{text-align:center;padding:40px 20px;color:var(--muted);}
+  .empty strong{color:var(--navy);display:block;font-family:var(--serif);font-size:24px;font-weight:600;margin-bottom:8px;}
+
+  /* CTA */
+  .cta{background:#f5f3ef;border-top:1px solid var(--line);text-align:center;padding:56px 24px;}
+  .cta h2{font-family:var(--serif);font-weight:600;font-size:clamp(24px,4vw,34px);color:var(--navy);}
+  .cta p{color:var(--muted);margin:10px auto 22px;max-width:440px;}
+  .cta a.btn{display:inline-block;background:var(--gold);color:var(--navy);font-weight:700;font-size:13px;letter-spacing:2px;text-transform:uppercase;padding:15px 30px;border-radius:0;transition:background .2s,transform .15s;}
+  .cta a.btn:hover{background:var(--gold-light);transform:translateY(-2px);}
+
+  footer{background:var(--navy-deep);color:#8ba0bf;text-align:center;padding:34px 24px;font-size:13px;}
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <span class="chip"><img src="logo-mark.png" alt="Bay Crest Media"></span>
+        <span class="name">Bay Crest Media</span>
+      </a>
+      <a class="back" href="/">&larr; Back to site</a>
+    </div>
+  </div>
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Answers</div>
+      <h1>Ask us anything</h1>
+      <p>Real questions, straight answers. Search below, or browse by topic.</p>
+    </div>
+  </section>
+
+  <div class="searchwrap">
+    <div class="wrap">
+      <div class="searchbox">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input id="q" type="text" placeholder="Ask a question, like &ldquo;do you do contracts?&rdquo;" autocomplete="off" aria-label="Search answers">
+      </div>
+      <div class="chips" id="chips"></div>
+    </div>
+  </div>
+
+  <main>
+    <div class="wrap">
+      <div class="count" id="count"></div>
+      <div id="results"></div>
+    </div>
+  </main>
+
+  <section class="cta">
+    <h2>Didn't find your answer?</h2>
+    <p>Ask me directly. You'll reach a real person, me, not a call center.</p>
+    <a class="btn" href="/#intake">Get in touch</a>
+  </section>
+
+  <footer>Bay Crest Media &middot; websites, Google reviews, and content for local Bay Area businesses.</footer>
+
+<script>
+  const LABELS = { 'Website':'Websites' };
+  const ORDER = ['Website','Google Reviews','Billing','General','Support'];
+  const label = (c) => LABELS[c] || c;
+
+  const input = document.getElementById('q');
+  const results = document.getElementById('results');
+  const countEl = document.getElementById('count');
+  const chipsEl = document.getElementById('chips');
+  let DATA = [], activeCat = 'All';
+
+  const esc = (s) => s.replace(/[&<>"]/g, (m) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
+
+  function buildChips(cats){
+    const order = ['All', ...ORDER.filter(c => cats.includes(c)), ...cats.filter(c => !ORDER.includes(c))];
+    chipsEl.innerHTML = order.map(c =>
+      `<button class="chip-btn${c===activeCat?' active':''}" data-cat="${esc(c)}">${esc(c==='All'?'All':label(c))}</button>`
+    ).join('');
+    chipsEl.querySelectorAll('.chip-btn').forEach(b => b.addEventListener('click', () => {
+      activeCat = b.dataset.cat; buildChips(cats); render();
+    }));
+  }
+
+  function render(){
+    const q = input.value.trim().toLowerCase();
+    const terms = q.split(/\s+/).filter(t => t.length > 1);
+    let pool = activeCat === 'All' ? DATA : DATA.filter(e => e.category === activeCat);
+
+    if(terms.length){
+      const scored = pool.map(e => {
+        const ql = e.question.toLowerCase(), al = e.answer.toLowerCase();
+        let s = 0;
+        for(const t of terms){ if(ql.includes(t)) s += 3; if(al.includes(t)) s += 1; }
+        return {e, s};
+      }).filter(x => x.s > 0).sort((a,b) => b.s - a.s);
+
+      if(!scored.length){
+        countEl.textContent = '';
+        results.innerHTML = `<div class="empty"><strong>No match for that one.</strong>Try simpler words like &ldquo;price,&rdquo; &ldquo;reviews,&rdquo; or &ldquo;cancel,&rdquo; or just ask me directly below.</div>`;
+        return;
+      }
+      countEl.textContent = scored.length + (scored.length === 1 ? ' answer' : ' answers');
+      results.innerHTML = scored.map(({e}) =>
+        `<div class="card"><span class="tag">${esc(label(e.category))}</span><div class="q">${esc(e.question)}</div><div class="a">${esc(e.answer)}</div></div>`
+      ).join('');
+    } else {
+      countEl.textContent = '';
+      const cats = activeCat === 'All' ? [...ORDER.filter(c => pool.some(e => e.category === c))] : [activeCat];
+      results.innerHTML = cats.map(c => {
+        const items = pool.filter(e => e.category === c);
+        if(!items.length) return '';
+        return `<div class="cat-head">${esc(label(c))}</div>` + items.map(e =>
+          `<details class="qa"><summary>${esc(e.question)}</summary><div class="ans">${esc(e.answer)}</div></details>`
+        ).join('');
+      }).join('');
+    }
+  }
+
+  fetch('faq-data.json')
+    .then(r => r.json())
+    .then(data => {
+      DATA = data;
+      const cats = [...new Set(data.map(e => e.category))];
+      buildChips(cats);
+      render();
+    })
+    .catch(() => {
+      results.innerHTML = `<div class="empty"><strong>Couldn't load the answers.</strong>Give the page a refresh, or reach out through the site and I'll help.</div>`;
+    });
+
+  input.addEventListener('input', render);
+</script>
+</body>
+</html>

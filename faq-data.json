@@ -1,0 +1,638 @@
+[
+  {
+    "category": "Billing",
+    "group": "Billing",
+    "question": "What does the website build fee cover?",
+    "answer": "The build fee is a one-time cost that covers the whole site: design, copy, setup, and getting it live. Standard sites are $1,497, premium sites are $2,497. The first call where we figure out what you need is free and always will be. You never pay to talk to me."
+  },
+  {
+    "category": "Billing",
+    "group": "Billing",
+    "question": "What does the monthly fee cover, and is it flat?",
+    "answer": "The monthly keeps your site live and looked after: hosting, security, backups, and the updates you send me. It's a flat price, never billed by the hour, so there's no surprise. Basic Care is $97 a month. Premium Care is $149 and adds about an hour of content updates a month plus priority when you need something fast. Reviews management is its own monthly, $97 standard or $249 hands-on."
+  },
+  {
+    "category": "Billing",
+    "group": "Billing",
+    "question": "Are there hidden fees?",
+    "answer": "No. The price I quote is the price. If something would ever cost extra, like a big new feature, I tell you the number first and you decide before I spend a dime."
+  },
+  {
+    "category": "Billing",
+    "group": "Billing",
+    "question": "How do I pay, and when?",
+    "answer": "I send a simple invoice and you pay by card. The one-time build fee is due before I start, and monthly plans bill on the same date each month. Start mid-month and I prorate it, so you only pay for the days you use."
+  },
+  {
+    "category": "Billing",
+    "group": "Billing",
+    "question": "Can I bundle a website and reviews?",
+    "answer": "Yes. That's the Local Presence Package: your website plus review management together for $1,697 to set up and $179 a month. That's a Standard website with Basic Care, plus review management. It's a better rate than buying them separately, and honestly it's the combination I'd recommend for most local businesses. A site that looks the part, and a steady stream of fresh reviews pointing at it."
+  },
+  {
+    "category": "Billing",
+    "group": "Billing",
+    "question": "Can I upgrade or downgrade later?",
+    "answer": "Anytime. Move from Basic to Premium Care, add reviews later, or scale back, just say the word and I adjust the next bill. Nothing's locked."
+  },
+  {
+    "category": "Billing",
+    "group": "Billing",
+    "question": "Is a new page or feature covered in my monthly, or a separate project?",
+    "answer": "Small stuff is included: hours, prices, a new photo, a promo, swapping text. A whole new page or a big feature is a separate project, and I quote you a flat price first. When we start, I give you a written list of exactly what's included so there's no gray area."
+  },
+  {
+    "category": "Billing",
+    "group": "Billing",
+    "question": "Are there termination fees, and can my rate go up?",
+    "answer": "No termination fees, ever. Everything's month to month. If you want to leave or move your site elsewhere, you can, and I'll help you do it cleanly. Your rate is your rate. I won't quietly raise it, and if anything ever changed you'd hear it from me well in advance."
+  },
+  {
+    "category": "Billing",
+    "group": "Billing",
+    "question": "What if a payment fails, or I stop paying?",
+    "answer": "Nothing dramatic. If a card fails I reach out and we sort it. If you stop, your site and review requests pause, but you own your site and content, so nothing's held hostage."
+  },
+  {
+    "category": "General",
+    "group": "General",
+    "question": "Who is Bay Crest Media?",
+    "answer": "Bay Crest Media is me, Jason. I help local businesses across the Bay Area handle the online side of things: your website, your Google reviews, and your social content. When you work with me, you work with me directly. No agency, no account managers, no handoffs. Just one person who takes it off your plate and actually gets it done."
+  },
+  {
+    "category": "General",
+    "group": "General",
+    "question": "How long have you been doing this?",
+    "answer": "I spent 25 years in tech and support before this, building systems that run reliably without constant babysitting, and that's exactly the thinking I bring to your website and your reviews. Bay Crest Media is newer, which is honestly why I offer a free preview, so you can judge the real work before you ever pay instead of taking my word for it."
+  },
+  {
+    "category": "General",
+    "group": "General",
+    "question": "Are you local?",
+    "answer": "Yes. I'm right here in the Bay Area, and I work with local businesses all across it. When you reach out, you get an actual person, me, not a support line."
+  },
+  {
+    "category": "General",
+    "group": "General",
+    "question": "Why should I choose you over another company?",
+    "answer": "A few honest reasons. You work directly with me, start to finish, so nothing gets lost in layers. Everything's month to month with no contracts, so I have to earn your business every month. I build custom, never cookie-cutter. And I tell you the truth, including when something isn't worth your money. I'd rather have a client who trusts me for years than a quick sale."
+  },
+  {
+    "category": "General",
+    "group": "General",
+    "question": "Do you have examples of your work, or references and testimonials?",
+    "answer": "The best thing I can do is show you. I'll build you a free preview of your own site so you can see exactly what you'd get, no strings, which beats looking at someone else's work anyway. I'm early enough that I'm still building my wall of testimonials, so I'd rather win your trust with the real thing than ask you to take it on faith."
+  },
+  {
+    "category": "General",
+    "group": "General",
+    "question": "Do you work with businesses like mine?",
+    "answer": "Probably, yes. I work with local service businesses and shops, realtors, contractors, gyms, salons, restaurants, the kind of business where looking good online and having strong reviews actually brings customers in. Tell me what you do and I'll give you a straight answer on whether I'm a fit."
+  },
+  {
+    "category": "General",
+    "group": "General",
+    "question": "Do you require a contract? Is it month to month?",
+    "answer": "No contracts. Everything is month to month. You can cancel anytime, and if you leave I'll help you do it cleanly. I'd rather you stay because the work is good than because you're locked in."
+  },
+  {
+    "category": "General",
+    "group": "General",
+    "question": "What happens if I want to cancel?",
+    "answer": "You just tell me, and we stop at the end of the month. No penalties, no termination fee. You own your website and content, so nothing's held hostage. We hand it off or you take it with you."
+  },
+  {
+    "category": "General",
+    "group": "General",
+    "question": "How do I get started?",
+    "answer": "Easy. Reach out through the site, or call, text, or email me, and tell me a little about your business. I'll take a quick, honest look at how you show up online right now, free. If you want a website, I'll build you a free preview so you can see it before you decide anything. If it's a fit, we go from there. If not, no pressure."
+  },
+  {
+    "category": "General",
+    "group": "General",
+    "question": "How long does everything take?",
+    "answer": "Depends on what you need. A clean one-page website is usually about a week once I have your details and photos. Reviews can start going out within a few days of setup. Content begins within a week of getting your voice down. I'll give you a real timeline up front, not a vague someday."
+  },
+  {
+    "category": "Google Reviews",
+    "group": "Texting for reviews",
+    "question": "Can you text my customers for Google reviews?",
+    "answer": "Yes, texting is available. I lead with email because it's simple and there's no red tape, but text can be added when it makes sense for your business. There are a couple of rules we follow so it stays clean, and I handle those for you."
+  },
+  {
+    "category": "Google Reviews",
+    "group": "Texting for reviews",
+    "question": "Is texting included, or is it extra?",
+    "answer": "Every plan includes an email invite that goes out through the systems you already use, so it reaches your customer at home. That's the honest default and it works for most businesses. If you'd like text requests added on top, that comes with the Premium reviews plan at $249 a month. There's no separate fee or line item, it's just part of Premium. And we only ever text customers who've agreed to be texted, with a clear reply STOP in every message."
+  },
+  {
+    "category": "Google Reviews",
+    "group": "Texting for reviews",
+    "question": "Why do you lead with email instead of text?",
+    "answer": "Two reasons. Email has almost no legal friction, so we can start right away. Text has rules about consent that we have to respect, so it's the second tool we reach for, not the first. Email on its own already gets most businesses a steady flow of reviews."
+  },
+  {
+    "category": "Google Reviews",
+    "group": "Texting for reviews",
+    "question": "Do you need my customers' permission to text them?",
+    "answer": "Yes, and this is important. The law only lets us text people who have agreed to be texted, usually when they check out or book with you. We can't take an old customer list and start texting everyone on it. If your booking or checkout system already collects that permission, we're good to go. And every text has a simple opt-out, a quick reply STOP, so your customers stay in control."
+  },
+  {
+    "category": "Google Reviews",
+    "group": "Texting for reviews",
+    "question": "Can you text my whole existing customer list?",
+    "answer": "Only the people on it who have agreed to be contacted by text. It's tempting to blast the whole list, but that's exactly what the rules are designed to prevent, and it's the kind of thing that gets a business in trouble. The honest, safe path is texting customers going forward as they opt in, and using email for everyone else."
+  },
+  {
+    "category": "Google Reviews",
+    "group": "Texting for reviews",
+    "question": "I already use Square (or Jane, or another booking tool). Does that help?",
+    "answer": "A lot. Systems like Square and Jane can send review-request texts on their own, with the customer's permission already collected when they paid or booked. If you use one of those, text is the easy path and I'll set it up to run through your system."
+  },
+  {
+    "category": "Google Reviews",
+    "group": "Texting for reviews",
+    "question": "Will the review text come from my business or from Bay Crest Media?",
+    "answer": "Always from your business. Your customer should see a friendly text that looks like it's from you, with your name on it. Bay Crest Media stays behind the scenes."
+  },
+  {
+    "category": "Google Reviews",
+    "group": "Texting for reviews",
+    "question": "Is text or email better for getting reviews?",
+    "answer": "Both work. Text often gets opened faster, email is easier to start with and has no restrictions. For most businesses the strongest setup is email as the backbone with text added on top once consent is in place, so you're covered on every kind of customer."
+  },
+  {
+    "category": "Google Reviews",
+    "group": "Texting for reviews",
+    "question": "Can I do text only, and skip email?",
+    "answer": "I wouldn't recommend it. Text only reaches customers who opted in, so you'd miss everyone who didn't. Email covers everybody, and text becomes the extra nudge on top. You get more reviews with both than with text alone."
+  },
+  {
+    "category": "Google Reviews",
+    "group": "Texting for reviews",
+    "question": "Is the review texting the same as the lead alerts you mentioned?",
+    "answer": "No, those are two different things. Lead alerts are just for me, so I get pinged the moment a new lead comes in for you. Review-request texts go to your customers, under your name, with their permission. Same kind of technology, completely different purpose."
+  },
+  {
+    "category": "Google Reviews",
+    "group": "The reviews service",
+    "question": "What exactly is Google Review Management, and how is it different from asking customers myself?",
+    "answer": "It's me taking the whole thing off your plate. Getting reviews works when you ask every customer, consistently, and reply to what comes in. The hard part isn't knowing that, it's doing it every single day while you run your business. I set up a simple system that invites every customer, makes it a two-tap thing for them, keeps it running, and replies to what comes in. You get the results without the chasing."
+  },
+  {
+    "category": "Google Reviews",
+    "group": "The reviews service",
+    "question": "How do you actually get me more reviews?",
+    "answer": "I set up a clean, easy path. Every customer gets an invite through the systems you already use, your booking or point-of-sale confirmations, your receipts, your email signature, and the link takes them straight to your review box, not your homepage, so there's no fumbling. And because the invite reaches them later, at home, it sidesteps the most common reason Google filters reviews out, the ones left on the spot inside a business, so more of yours stay put. I keep it going steadily, which is the part most businesses drop, and I make it just as easy for the less tech-savvy folks."
+  },
+  {
+    "category": "Google Reviews",
+    "group": "The reviews service",
+    "question": "What happens during setup, and how long does it take?",
+    "answer": "Setup is quick and I do the heavy lifting. I clean up your Google Business Profile, grab your direct review link, get manager access, wire the review invite into the systems you already use, your booking or point-of-sale confirmations, receipts, and email signature, and give your recent customers a first nudge. Usually it's live within a few days of getting access, and there's nothing for you to set up or print."
+  },
+  {
+    "category": "Google Reviews",
+    "group": "The reviews service",
+    "question": "How much work do I have to do?",
+    "answer": "Almost none, that's the whole point. I set the invites to run automatically through the systems you already use, so there's nothing for you to configure and nothing to print or hand out. Once it's set up, you keep doing great work and I make sure your customers get invited to talk about it."
+  },
+  {
+    "category": "Google Reviews",
+    "group": "The reviews service",
+    "question": "Is this allowed by Google? Could my profile get suspended?",
+    "answer": "Yes, it's fully allowed, because I do it the right way. I invite your real customers to share honest reviews, which is exactly what Google wants. Doing it clean, real customers, no cherry-picking, is what keeps your profile safe."
+  },
+  {
+    "category": "Google Reviews",
+    "group": "The reviews service",
+    "question": "Are the reviews real? Do you buy them or pay customers?",
+    "answer": "Every review is a real one from a real customer, always. I never buy reviews or pay for them. What I do is make it easy for the customers you've already earned to leave the review they were happy to give."
+  },
+  {
+    "category": "Google Reviews",
+    "group": "The reviews service",
+    "question": "Can you guarantee a certain number of reviews a month?",
+    "answer": "I won't put a number on it, because that depends on your customers, and anyone who promises you a specific count isn't being straight. What I can promise is that every customer gets invited, it's made easy, and I stay on it consistently. Businesses that do that steadily watch the reviews add up, and I'd rather under-promise and let the results speak."
+  },
+  {
+    "category": "Google Reviews",
+    "group": "The reviews service",
+    "question": "What if my customers don't leave reviews?",
+    "answer": "Some won't, and that's normal, not everyone does. That's exactly why the system invites everyone and keeps at it, so the ones who are happy to leave a review actually do. Consistency is what turns a trickle into a steady flow."
+  },
+  {
+    "category": "Google Reviews",
+    "group": "The reviews service",
+    "question": "Do you only ask happy customers, or does this bury my bad ones?",
+    "answer": "I ask everyone, that's both the honest way and the rule, since cherry-picking only happy customers is against Google's and the FTC's guidelines. It doesn't bury anything. It makes sure your overall picture reflects all the good work you do, so a stray bad review sits next to plenty of genuine happy ones instead of standing alone."
+  },
+  {
+    "category": "Google Reviews",
+    "group": "The reviews service",
+    "question": "Will more reviews help me show up higher on Google Maps?",
+    "answer": "A steady stream of fresh, genuine reviews is one of the signals that helps your local presence, so yes, it tends to help how you show up. I won't promise you a specific spot on the map, nobody honestly can, but strong, active reviews are one of the best things going for your visibility."
+  },
+  {
+    "category": "Google Reviews",
+    "group": "The reviews service",
+    "question": "What if someone leaves a bad review? Will you respond?",
+    "answer": "I respond to every review, the good and the tough ones, in your voice and always calm and professional. A thoughtful reply to a bad review often does more good than the review did harm, because future customers see a business that listens. I'll flag it to you right away too, so you're never caught off guard."
+  },
+  {
+    "category": "Google Reviews",
+    "group": "The reviews service",
+    "question": "Can I approve responses before they go out?",
+    "answer": "Absolutely, if you want to. Some clients like to see replies first, others trust me to just handle it. We set it up whichever way makes you comfortable."
+  },
+  {
+    "category": "Google Reviews",
+    "group": "The reviews service",
+    "question": "Can you remove bad reviews?",
+    "answer": "I'll be straight with you here, because it matters: no one can simply delete a real review, and anyone who says they can is selling smoke. What I do is respond to it well and flag it to you, and if a review actually breaks Google's rules, fake, abusive, or from a competitor, I report it and push to get it taken down. Real feedback we answer with class, rule-breaking reviews we fight."
+  },
+  {
+    "category": "Google Reviews",
+    "group": "The reviews service",
+    "question": "What about a fake review, can you report it?",
+    "answer": "Yes. If a review is fake, from a competitor, or breaks Google's rules, I report it and make the case to have it removed. Google has the final say, so it doesn't always work, but I'll always go to bat for you on the ones that cross the line."
+  },
+  {
+    "category": "Google Reviews",
+    "group": "The reviews service",
+    "question": "Will you keep an eye on my reviews and tell me about a bad one?",
+    "answer": "Yes. I monitor your reviews so nothing sits unanswered, and if a negative one comes in, you hear from me quickly with a calm reply ready to go. You're never blindsided."
+  },
+  {
+    "category": "Google Reviews",
+    "group": "The reviews service",
+    "question": "Do I have to hand over my customer list, and is it kept private?",
+    "answer": "For most setups I don't even need your list, because the invites go out as customers come through your own system. If we ever do use contact info, it stays private, only ever used to invite your customers to review you, never shared, never sold, never used for anything else."
+  },
+  {
+    "category": "Google Reviews",
+    "group": "The reviews service",
+    "question": "Can customers opt out, and do you honor do-not-contact requests?",
+    "answer": "Always. If a customer doesn't want to be contacted, they're out, immediately and for good. Respecting that isn't just polite, it's the law, and it keeps your business on the right side of it."
+  },
+  {
+    "category": "Google Reviews",
+    "group": "The reviews service",
+    "question": "How often do customers get asked, and can I control the timing?",
+    "answer": "Usually one friendly invite per visit, timed for right after a good experience, which is when people are most likely to share their experience. It's never a barrage, that would annoy your regulars and defeat the point. And if you're seasonal or want to dial the pace up or down, we adjust it to fit your business."
+  },
+  {
+    "category": "Google Reviews",
+    "group": "The reviews service",
+    "question": "Do you need access to my Google Business Profile, and can I remove it later?",
+    "answer": "Yes, I'll need manager access to run it, and I'll walk you through adding me, it takes a couple of minutes. It's your profile, so you can remove my access anytime with a couple of clicks. You're always in control."
+  },
+  {
+    "category": "Google Reviews",
+    "group": "The reviews service",
+    "question": "Can I still reply to reviews myself?",
+    "answer": "Of course. It's your business and your voice. I've got it covered so nothing slips, but if you want to jump in and reply to someone yourself, go right ahead."
+  },
+  {
+    "category": "Google Reviews",
+    "group": "The reviews service",
+    "question": "What happens if I stop the service?",
+    "answer": "No drama. The invites stop going out, but every review you earned stays right where it is. You keep your profile, your access, and all your reviews. Nothing gets undone."
+  },
+  {
+    "category": "Google Reviews",
+    "group": "The reviews service",
+    "question": "Do you use QR codes, and where do the review links go?",
+    "answer": "Into the places that reach your customer after they leave: your emailed receipts and booking confirmations, your email signature, and your website. I deliberately keep it off the counter, because a review someone taps out while standing in your shop, on your WiFi, is one of the most common kinds Google filters out. Reaching people at home avoids that trap, so more of your reviews stay put. If a rare walk-in-only business ever needs a scan-later code, I hand it over as a digital file, but I never plaster one at the register."
+  },
+  {
+    "category": "Google Reviews",
+    "group": "The reviews service",
+    "question": "Can this connect with my Square, booking, or point-of-sale system?",
+    "answer": "Often, yes. If you use something like Square or Jane, they can send review invites right through your existing setup, with the customer's permission already handled. I'll set it to run through whatever you already use so it's smooth."
+  },
+  {
+    "category": "Google Reviews",
+    "group": "The reviews service",
+    "question": "Do you send reports, and can I see the return I'm getting?",
+    "answer": "Yes. You get a simple monthly summary, new reviews, how you're trending, and what I've handled, in plain language, not a confusing dashboard. Watching your review count and rating climb over time is the return that matters for a local business."
+  },
+  {
+    "category": "Google Reviews",
+    "group": "The reviews service",
+    "question": "Can you manage more than one location?",
+    "answer": "Yes. If you've got multiple locations, I can run reviews for each one, so every spot builds its own strong reputation."
+  },
+  {
+    "category": "Google Reviews",
+    "group": "The reviews service",
+    "question": "Can we customize the request so it sounds like my business, and can I see the wording first?",
+    "answer": "Definitely. The invites go out in your business's name and voice, not some generic script, and I'll show you the exact email and text wording before anything goes live so you're happy with how it sounds."
+  },
+  {
+    "category": "Website",
+    "group": "Build & what's included",
+    "question": "What makes your websites premium, and are they custom built?",
+    "answer": "Every site is custom built for your business, no cookie-cutter templates. Premium means it's designed around you: your brand, your colors, your services, your photos, laid out to look professional and to turn visitors into customers. The kind of site that makes someone trust you before they've even called."
+  },
+  {
+    "category": "Website",
+    "group": "Build & what's included",
+    "question": "Do you use templates?",
+    "answer": "No. I start from a premium design foundation I've refined, then build everything around your specific business. Nobody else ends up with your site."
+  },
+  {
+    "category": "Website",
+    "group": "Build & what's included",
+    "question": "What's included, and how many pages do I get?",
+    "answer": "Most businesses do great with one clean, focused page that has everything a customer needs: what you do, why you're good, your reviews, and how to reach you. That's the Standard build. Need more, and the Premium build is a fuller multi-page site. Either way it includes design, copy, your photos, mobile setup, a contact form, and getting it live."
+  },
+  {
+    "category": "Website",
+    "group": "Build & what's included",
+    "question": "Can I add more pages later, or start small and grow?",
+    "answer": "Absolutely. Start with one page now and add more when you're ready. Nothing has to be rebuilt to grow, we just add to it."
+  },
+  {
+    "category": "Website",
+    "group": "Build & what's included",
+    "question": "Can you redesign my existing website?",
+    "answer": "Yes. Send me the link and I'll take an honest look. If it's dated or hard to use on a phone, I'll show you what I'd change and rebuild it clean."
+  },
+  {
+    "category": "Website",
+    "group": "Build & what's included",
+    "question": "What do you build the sites with, and could another developer take over later?",
+    "answer": "Clean, standard code that loads fast and isn't locked into some proprietary builder. If you ever moved on, another developer could pick it up without a headache. You're never trapped."
+  },
+  {
+    "category": "Website",
+    "group": "Domain, hosting, and ownership",
+    "question": "Can you use my current domain, or set up a new one?",
+    "answer": "Either. I can connect your existing domain, register a new one, or help you get one if you don't have it yet. I handle the technical side."
+  },
+  {
+    "category": "Website",
+    "group": "Domain, hosting, and ownership",
+    "question": "Who owns the website, the domain, the content, and the photos?",
+    "answer": "You do, all of it. I build it, host it, and maintain it, but the site, your domain, your content, and your photos belong to you."
+  },
+  {
+    "category": "Website",
+    "group": "Domain, hosting, and ownership",
+    "question": "Is hosting included, and can I move the site elsewhere later?",
+    "answer": "Hosting is part of your monthly care plan, so it's handled. And because you own the site and it's built on standard code, you can move it elsewhere anytime."
+  },
+  {
+    "category": "Website",
+    "group": "Domain, hosting, and ownership",
+    "question": "What happens to my site if I cancel?",
+    "answer": "You own your site and everything on it, so you're never stuck. Hosting and updates are part of the monthly, so if you decide to stop, I hand the site off to you cleanly or help you move it wherever you like. Nothing's ever held hostage."
+  },
+  {
+    "category": "Website",
+    "group": "Speed, mobile, and security",
+    "question": "Will it work on phones and tablets?",
+    "answer": "Yes, that's the priority. It's built mobile-first, because that's where nearly all your customers find you, and it adjusts cleanly to any screen size, even on slower cell connections."
+  },
+  {
+    "category": "Website",
+    "group": "Speed, mobile, and security",
+    "question": "Is it fast?",
+    "answer": "Yes. I build lean, image-optimized sites that load quickly. Speed matters for your visitors and your Google standing, so it's baked in from the start."
+  },
+  {
+    "category": "Website",
+    "group": "Speed, mobile, and security",
+    "question": "Is it secure, and protected from hackers?",
+    "answer": "Yes. Every site gets SSL (the padlock in the browser), stays updated, and is backed up, and because I build clean and simple, there's very little for anyone to target in the first place. The protections are handled, so it's one more thing you get to stop worrying about."
+  },
+  {
+    "category": "Website",
+    "group": "Speed, mobile, and security",
+    "question": "Do you back it up, and what if something breaks?",
+    "answer": "I keep backups, and I take one before any major change. If something breaks, you tell me and I fix it, usually same day. Keeping things running is exactly what the care plan is for."
+  },
+  {
+    "category": "Website",
+    "group": "Getting found on Google",
+    "question": "Will it show up on Google, and do you help with SEO?",
+    "answer": "Yes, getting you found is a big part of the point. I build your site clean, with the technical basics Google and the AI assistants look for, and I submit it so you start showing up. Climbing to the very top is a longer game with a lot of moving parts, so I give you a strong foundation and a straight, no-smoke picture of what actually moves the needle from there."
+  },
+  {
+    "category": "Website",
+    "group": "Getting found on Google",
+    "question": "If I'm moving from an old site, will I lose my Google rankings?",
+    "answer": "I protect what you've built. I carry over your content and set up redirects so your old links still work and your history moves with you, which is how you hold onto your standing through a move. A careful migration is the difference between a smooth switch and losing ground, and careful is the only way I do it."
+  },
+  {
+    "category": "Website",
+    "group": "Features on your site",
+    "question": "Can the contact form text me, email me, or reach more than one person?",
+    "answer": "Yes to all three. Your form can text you the moment a lead comes in, email you too, and send to more than one person if you want your team looped in."
+  },
+  {
+    "category": "Website",
+    "group": "Features on your site",
+    "question": "Can customers call, get directions, or see a map from the site?",
+    "answer": "Yes. A tap-to-call button, a get-directions button that opens Maps, and an embedded map are all standard."
+  },
+  {
+    "category": "Website",
+    "group": "Features on your site",
+    "question": "Can I have an image gallery, videos, or testimonials?",
+    "answer": "Yes. A clean photo gallery that works well on phones, embedded video, and a testimonials section are all easy to include."
+  },
+  {
+    "category": "Website",
+    "group": "Features on your site",
+    "question": "Can I show my Google reviews on the site?",
+    "answer": "Yes, and I'd recommend it. Your reviews are strong proof, and putting them on your site, which pairs nicely with the review service, helps new visitors trust you fast."
+  },
+  {
+    "category": "Website",
+    "group": "Features on your site",
+    "question": "Can I take online orders or reservations?",
+    "answer": "Yes. I connect your site to the tools that already do this well, a clean button to DoorDash, UberEats, Toast, OpenTable, or your booking system, right where customers expect it. You get ordering or reservations without reinventing the wheel."
+  },
+  {
+    "category": "Website",
+    "group": "Features on your site",
+    "question": "Can I update my menu, hours, prices, specials, or run promos?",
+    "answer": "Yes. Those are the everyday updates your care plan covers. Send them over and I make the change, including seasonal things like holiday hours or a promo banner."
+  },
+  {
+    "category": "Website",
+    "group": "Features on your site",
+    "question": "Can you add a blog, an FAQ section, or forms later?",
+    "answer": "Yes, on any plan, it's not a premium-only thing. A small form or a short FAQ block on a page you already have is usually a quick add under your care plan. A blog is really a new section of its own, so like any new page, it's a small separate project I'd quote you a flat price for first. You'll always know the cost before I start."
+  },
+  {
+    "category": "Website",
+    "group": "Features on your site",
+    "question": "Can you connect my social media?",
+    "answer": "Yes, I can link your social profiles from the site. Running the social accounts themselves is the separate content service."
+  },
+  {
+    "category": "Website",
+    "group": "Features on your site",
+    "question": "Can you add live chat or an AI chatbot?",
+    "answer": "For a local business, I set you up with a clear \"call or text\" button that gets a customer talking to you fast, which tends to win more business than a bot and actually feels like you. I lean on that rather than a chatbot, but if there's a specific reason you want chat, tell me and we'll talk it through."
+  },
+  {
+    "category": "Website",
+    "group": "Features on your site",
+    "question": "Can you add multiple languages or a site search?",
+    "answer": "For a clean, focused local site, most folks don't need internal search or a second language, so I keep things simple and fast instead. If your business genuinely needs one of those, just tell me and we'll figure out the right way to do it."
+  },
+  {
+    "category": "Website",
+    "group": "Features on your site",
+    "question": "Can you add appointment booking or scheduling?",
+    "answer": "Yes, by connecting the booking tool you already use, like Calendly or your scheduler, right into the site. I embed or link it rather than building a booking system from scratch."
+  },
+  {
+    "category": "Website",
+    "group": "Features on your site",
+    "question": "Can you integrate my CRM, MLS listings, or property management software?",
+    "answer": "Here's how it works: your leads come straight to you, by email, phone, or text, the second they come in, so nothing slips through. For your MLS or CRM, I connect the site to what you already use instead of wiring deep into it, which keeps your site fast and your monthly simple. And if deep integration is a must-have, I'll happily point you toward a bigger shop that specializes in it."
+  },
+  {
+    "category": "Website",
+    "group": "Features on your site",
+    "question": "I'm a realtor or contractor. Can you build agent bios, project portfolios, before-and-after galleries, or link a 3D tour?",
+    "answer": "Yes, those are some of my favorite pages to build. An agent bio, a portfolio of your projects, a before-and-after gallery, a link out to a Matterport or virtual tour, all just well-designed pages, which is exactly my product. Full MLS search or a 3D-tour platform, no, but a link to your tour, absolutely."
+  },
+  {
+    "category": "Website",
+    "group": "Features on your site",
+    "question": "Can you show my credentials, licenses, awards, or insurance?",
+    "answer": "Yes. Highlighting your license number, certifications, awards, or proof of insurance builds trust, and it's simple to add."
+  },
+  {
+    "category": "Website",
+    "group": "Copy and photos",
+    "question": "Can you write the website copy, or improve what I have?",
+    "answer": "Yes. I can write it all from scratch, use and polish your existing content, or mix both. You don't need to come with copy ready. That's part of the build."
+  },
+  {
+    "category": "Website",
+    "group": "Copy and photos",
+    "question": "Can you use my photos, organize them, and optimize them?",
+    "answer": "Send me what you have and I'll organize the best ones and optimize them so the site loads fast. Good photos make a big difference, so if you're short on them I'll tell you honestly what would help."
+  },
+  {
+    "category": "Website",
+    "group": "Copy and photos",
+    "question": "Can you use photos from my Yelp or old site?",
+    "answer": "Yes, as long as they're yours to use and good enough quality. I'll just double-check the rights so you're never on the hook for a copyright headache down the road. Clean, properly sourced photos keep you safe and keep the site looking sharp."
+  },
+  {
+    "category": "Website",
+    "group": "Updates, edits, and going live",
+    "question": "Will you update the site for me, and what's included?",
+    "answer": "Yes, that's the whole idea of the care plan. Everyday changes like text, photos, hours, prices, and promos are included. A whole new page or a big new feature is a separate project, and I quote a flat price first. When we start I give you a written list of what's covered so there's no gray area."
+  },
+  {
+    "category": "Website",
+    "group": "Updates, edits, and going live",
+    "question": "Can I edit the site myself?",
+    "answer": "By default I handle your edits for you, that's what the care plan is for, and it keeps the design from getting accidentally broken. Just send me the change and it's done, usually same day. If there's one thing you truly want to control yourself, tell me and we'll sort it out."
+  },
+  {
+    "category": "Website",
+    "group": "Updates, edits, and going live",
+    "question": "How many revisions do I get, and can I see it before it goes live?",
+    "answer": "You preview the site and we refine it together before it ever goes public. The build includes rounds of revisions to get it right, and I test everything before launch. You sign off, then it goes live."
+  },
+  {
+    "category": "Website",
+    "group": "Updates, edits, and going live",
+    "question": "What if my contact form or text alerts stop working?",
+    "answer": "You tell me and I fix it fast, that's part of keeping the lights on. Your form and lead alerts are the most important thing on the site, so if anything hiccups, it's my priority."
+  },
+  {
+    "category": "Website",
+    "group": "Analytics",
+    "question": "Can I see how my site is doing, traffic and leads?",
+    "answer": "Yes, at the level that matters. I set up Google Analytics so you can see your visits and where they come from. The heavy agency-tier stuff like A/B testing and ROI dashboards isn't part of it, and honestly a local business rarely needs it. The basics tell you what you actually want to know."
+  },
+  {
+    "category": "Website",
+    "group": "Accessibility, privacy, and scale",
+    "question": "Is the site accessible, or ADA friendly?",
+    "answer": "I build with the accessibility basics in mind: alt text on images, readable contrast, and clean structure that's easy to get around, so your site works well for as many people as possible. I don't do formal ADA certification, that's a specialist's job and I'll point you to one if you need it, but the solid fundamentals are in from day one."
+  },
+  {
+    "category": "Website",
+    "group": "Accessibility, privacy, and scale",
+    "question": "What about privacy laws like GDPR or CCPA?",
+    "answer": "Yes, I include a privacy policy and keep your data handling clean and minimal, which covers what a local business site needs. If you're in a heavily regulated industry with special requirements, I'll tell you honestly and point you to the right specialist, but for most businesses you're set."
+  },
+  {
+    "category": "Website",
+    "group": "Accessibility, privacy, and scale",
+    "question": "Can the site handle a traffic spike, or scale as I grow?",
+    "answer": "For the traffic a local business sees, including a busy day or a spike, yes, comfortably. If you're planning to grow into something much bigger and more complex, I'll be upfront about where that goes beyond what I focus on."
+  },
+  {
+    "category": "Website",
+    "group": "Accessibility, privacy, and scale",
+    "question": "Can you help if I'm rebranding, merging, or adding a new service?",
+    "answer": "Yes. A rebrand, a new service line, a name change, those are exactly the kind of updates the care plan handles. Your site grows with your business."
+  },
+  {
+    "category": "Website",
+    "group": "Team and multiple locations",
+    "question": "Can I have staff logins, roles, or manage multiple locations?",
+    "answer": "If you run multiple locations, I'll represent them all beautifully on the site, that part's easy. These sites are built for a single owner rather than a team dashboard, so there aren't separate staff logins or permission levels, and that keeps things simple with nothing to manage or break."
+  },
+  {
+    "category": "Website",
+    "group": "Ads",
+    "question": "Do you run Google Ads or paid marketing?",
+    "answer": "I pour everything into your website and your reviews and keep those excellent. Paid ads are their own full-time specialty, so rather than dabble, I'd point you to someone who lives in that world. You're better served by each of us doing what we do best."
+  },
+  {
+    "category": "Support",
+    "group": "Support",
+    "question": "How do I reach you, and can I call?",
+    "answer": "Easy, and yes, you can call. Email me at jason@baycrestmedia.com, or call or text using the number posted on the site. Either way you reach me directly, a real person, not a ticket queue or a call center."
+  },
+  {
+    "category": "Support",
+    "group": "Support",
+    "question": "How quickly do you respond?",
+    "answer": "Fast, usually the same day. You're not going to be left wondering. If something's urgent, like your form or a lead alert acting up, it jumps to the front of the line."
+  },
+  {
+    "category": "Support",
+    "group": "Support",
+    "question": "Do you work weekends?",
+    "answer": "I keep an eye on things over the weekend, especially anything time-sensitive like a broken form or a review that needs a reply. Everyday requests I'll get to first thing, but you're never left hanging when it matters."
+  },
+  {
+    "category": "Support",
+    "group": "Support",
+    "question": "Will I always work with you directly?",
+    "answer": "Always. No account manager, no handoff to a junior, no overseas team. You work with me, start to finish. That's the whole idea of Bay Crest Media."
+  },
+  {
+    "category": "Support",
+    "group": "Support",
+    "question": "How do I request a website change, and how long does it take?",
+    "answer": "Just send it to me however's easiest, a text, an email, a quick note. Everyday changes like hours, prices, a photo, or a promo are usually done same day or next. Bigger stuff I'll give you a clear timeline up front. No forms to fill out, no runaround."
+  },
+  {
+    "category": "Support",
+    "group": "Support",
+    "question": "What if my business moves, or I change my phone number?",
+    "answer": "Just tell me and I update it everywhere it matters, your website, your Google profile, all of it, so customers always reach the right place. Keeping your details current is part of the care plan."
+  },
+  {
+    "category": "Support",
+    "group": "Support",
+    "question": "What happens if I sell my business?",
+    "answer": "Congratulations, first of all. You own your site, your domain, and your content, so it all transfers cleanly to the new owner if that's part of the deal, or we wind things down, whatever you need. I'll make the handoff smooth either way."
+  }
+]

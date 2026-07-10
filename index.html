@@ -242,6 +242,14 @@
   .formmsg{display:none;text-align:center;padding:18px 20px;border-radius:8px;background:#eef7f0;border:1px solid #cfe9d6;color:#2c6b43;font-weight:600;margin-top:20px;}
   .formmsg.err{background:#fbeef0;border-color:#f0ccd2;color:#a23b4a;}
   .hp{position:absolute;left:-9999px;}
+  .pkg-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+  @media(max-width:600px){.pkg-grid{grid-template-columns:1fr;}}
+  .intake .pkg{display:flex;align-items:flex-start;gap:10px;margin:0;padding:11px 13px;border:1px solid var(--line);border-radius:6px;background:#fdfcfa;cursor:pointer;text-transform:none;letter-spacing:0;transition:border-color .15s;}
+  .intake .pkg:hover{border-color:var(--gold);}
+  .intake .pkg input{appearance:auto;-webkit-appearance:auto;width:16px;height:16px;padding:0;margin:2px 0 0;border:0;background:none;box-shadow:none;flex:0 0 auto;accent-color:var(--navy);}
+  .intake .pkg b{display:block;font:600 14px/1.3 var(--sans);color:var(--navy);}
+  .intake .pkg small{color:var(--muted);font-size:12px;}
+  .pkg-full{grid-column:1 / -1;}
 
   /* Samples */
   .samples{padding:120px 0;background:#f8f4ec;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
@@ -310,6 +318,7 @@
       <a href="#get">What You Get</a>
       <a href="#plans">Services</a>
       <a href="#faq">FAQ</a>
+      <a href="/answers.html">Answers</a>
     </nav>
     <div style="display:flex;align-items:center;gap:14px;">
       <a href="#intake" class="btn btn-gold btn-sm">Free Sample</a>
@@ -323,6 +332,7 @@
     <a href="#get">What You Get</a>
     <a href="#plans">Services</a>
     <a href="#faq">FAQ</a>
+    <a href="/answers.html">Answers</a>
   </div>
 </header>
 
@@ -657,6 +667,19 @@
           <option>Not sure yet</option>
         </select>
       </div>
+      <div class="field" id="pkgField" style="display:none;">
+        <label>Which package(s) are you interested in?</label>
+        <div class="pkg-grid">
+          <label class="pkg pkg-full"><input type="checkbox" name="Packages" value="Local Presence Package"><span><b>Local Presence Package</b><small>Our most popular option. A custom website and Google review management working together, one to look the part, one to keep the trust coming in. $1,697 to set up, then $179 a month.</small></span></label>
+          <label class="pkg"><input type="checkbox" name="Packages" value="Website (Standard)"><span><b>Website (Standard)</b><small>$1,497 one-time</small></span></label>
+          <label class="pkg"><input type="checkbox" name="Packages" value="Website (Premium)"><span><b>Website (Premium)</b><small>$2,497 one-time</small></span></label>
+          <label class="pkg"><input type="checkbox" name="Packages" value="Google Reviews (Standard)"><span><b>Google Reviews (Standard)</b><small>$97/mo</small></span></label>
+          <label class="pkg"><input type="checkbox" name="Packages" value="Google Reviews (Premium)"><span><b>Google Reviews (Premium)</b><small>$249/mo</small></span></label>
+          <label class="pkg pkg-full"><input type="checkbox" name="Packages" value="Social Content (Starter)"><span><b>Social Content (Starter)</b><small>A steady baseline of content written in your voice, around 8 posts and 2 reels a month, delivered ready for you to post. $997 a month.</small></span></label>
+          <label class="pkg pkg-full"><input type="checkbox" name="Packages" value="Social Content (Content Engine)"><span><b>Social Content (Content Engine)</b><small>The most popular content plan. Around 16 posts, 4 reels, and 2 emails a month, plus a monthly strategy call. You review and post. $2,000 a month.</small></span></label>
+          <label class="pkg pkg-full"><input type="checkbox" name="Packages" value="Social Content (Done For You)"><span><b>Social Content (Done For You)</b><small>Everything in Content Engine, and we schedule and post all of it for you. $2,500 a month.</small></span></label>
+        </div>
+      </div>
       <div class="field"><label>Tell us a little more about what you're looking for</label><textarea name="goals" placeholder="What are you hoping to fix or grow, and anything you feel stuck on..."></textarea></div>
       <div class="submit"><button type="submit" class="btn btn-gold btn-lg">Send my details</button></div>
       <div class="formnote">No pressure and no obligation. We'll review and reach out with a free sample.</div>
@@ -696,7 +719,8 @@
     e.preventDefault();
     const msg=document.getElementById('formMsg');
     const btn=form.querySelector('button[type="submit"]');
-    const data=Object.fromEntries(new FormData(form));
+    const fd=new FormData(form);const data={};
+    fd.forEach(function(v,k){data[k]=data[k]?data[k]+', '+v:v;});
     btn.disabled=true; const orig=btn.textContent; btn.textContent='Sending...';
     try{
       const res=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(data)});
@@ -706,6 +730,17 @@
     }catch(err){msg.className='formmsg err';msg.style.display='block';msg.textContent='Something went wrong. Please email jason@baycrestmedia.com directly.';}
     btn.disabled=false; btn.textContent=orig;
   });}
+
+  // Package checklist appears only when "More than one" is selected
+  var svcSel=form?form.querySelector('select[name="service"]'):null;
+  var pkgField=document.getElementById('pkgField');
+  function togglePkg(){
+    if(!svcSel||!pkgField)return;
+    var show=svcSel.value==='More than one of these';
+    pkgField.style.display=show?'':'none';
+    if(!show)pkgField.querySelectorAll('input[type=checkbox]').forEach(function(c){c.checked=false;});
+  }
+  if(svcSel)svcSel.addEventListener('change',togglePkg);
 
   // Pricing cards: click a card or its button to prefill the intake form + scroll
   function bcmPrefill(el){
