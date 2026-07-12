@@ -81,15 +81,17 @@
     <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off">
 
     <div class="card">
-      <div class="field"><label>Your name</label><input type="text" name="name" placeholder="e.g. Sarah Mitchell" required></div>
+      <div class="field"><label>Your name <span class="note">(as it should appear on the reel)</span></label><input type="text" name="name" placeholder="e.g. Sarah Mitchell" required></div>
       <div class="field"><label>Email</label><input type="email" name="email" placeholder="agent@email.com" required></div>
-      <div class="field"><label>Phone <span class="note">(optional)</span></label><input type="tel" name="phone" placeholder="(555) 555-5555"></div>
-      <div class="field"><label>Area you serve <span class="note">(optional)</span></label><input type="text" name="area" placeholder="e.g. Oakland / East Bay"></div>
+      <div class="field"><label>Your brokerage</label><input type="text" name="brokerage" placeholder="e.g. Bay Crest Realty" required></div>
+      <div class="field"><label>Preferred contact for the reel <span class="note">(shows in the outro)</span></label><input type="text" name="reel_contact" placeholder="e.g. Text (650) 555-0100" required></div>
+      <div class="field"><label>Listing area <span class="note">(neighborhood + city, no full address needed)</span></label><input type="text" name="listing_area" placeholder="e.g. Rockridge, Oakland" required></div>
+      <div class="field"><label>Beds / Baths</label><input type="text" name="beds_baths" placeholder="e.g. 3 Bed, 2 Bath" required></div>
 
       <div class="field">
-        <label>Your listing</label>
-        <input type="text" name="listing_link" placeholder="Paste a Zillow, Redfin, MLS, or website listing link" required>
-        <div class="photo-note"><b>For the best reel, we use at least 8 photos.</b> A listing link already has plenty, that's the easiest option. Prefer to send photos directly? Email at least 8 to <b>jason@baycrestmedia.com</b>.</div>
+        <label>Your photos or listing link</label>
+        <input type="text" name="photos_link" placeholder="Paste a Google Drive, Dropbox, Zillow, Redfin, or MLS link">
+        <div class="photo-note"><b>For the best reel, we use 8 to 12 photos.</b> Paste a link above, or after you submit, just reply to our confirmation email with your photos. We hold back the price and street address in the finished reel.</div>
       </div>
 
       <div class="field"><label>Any look you're going for? <span class="note">(optional)</span></label><textarea name="style_note" placeholder="e.g. clean and modern, or luxury and cinematic. Leave blank and we'll pick what fits the home."></textarea></div>
