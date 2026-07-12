@@ -200,6 +200,12 @@
   {
     "category": "Google Reviews",
     "group": "The reviews service",
+    "question": "What does review management cost?",
+    "answer": "Review management is $97 a month for the standard plan, or $249 a month for high-volume businesses, plus a one-time $299 setup to get everything launched: profile cleanup, your direct review link, and the request system. Month to month, cancel anytime."
+  },
+  {
+    "category": "Google Reviews",
+    "group": "The reviews service",
     "question": "How much work do I have to do?",
     "answer": "Almost none, that's the whole point. I set the invites to run automatically through the systems you already use, so there's nothing for you to configure and nothing to print or hand out. Once it's set up, you keep doing great work and I make sure your customers get invited to talk about it."
   },
@@ -640,5 +646,17 @@
     "group": "Support",
     "question": "What happens if I sell my business?",
     "answer": "Congratulations, first of all. You own your site, your domain, and your content, so it all transfers cleanly to the new owner if that's part of the deal, or we wind things down, whatever you need. I'll make the handoff smooth either way."
+  },
+  {
+    "category": "Content",
+    "group": "Content",
+    "question": "What do the content plans cost?",
+    "answer": "Three monthly plans, all month to month. Starter is $997 a month, around 8 posts and 2 reels, written and delivered ready for you to post. Content Engine is $2,000 a month, around 16 posts, 4 reels, and 2 emails, plus a monthly strategy call. Done For You is $2,500 a month, everything in Content Engine, and we schedule and post it all once you approve. No contracts, cancel anytime."
+  },
+  {
+    "category": "Content",
+    "group": "Content",
+    "question": "What's included in the content plans?",
+    "answer": "Content across Instagram, Facebook, LinkedIn, TikTok, X, and email, all written in your voice from one quick update. You get scroll-stopping hooks, full captions, and email subject lines, ready to use. Higher plans add more volume, monthly emails, and a strategy call, and on Done For You we handle the scheduling and posting once you approve."
   }
 ]
