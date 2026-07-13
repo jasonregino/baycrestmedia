@@ -59,7 +59,7 @@
   header{position:fixed;top:0;left:0;right:0;z-index:50;transition:background .4s,box-shadow .4s,padding .4s;padding:22px 0;}
   header.solid{background:rgba(253,252,250,.92);backdrop-filter:blur(12px);box-shadow:0 8px 30px -20px rgba(11,37,69,.4);padding:14px 0;}
   .nav{display:flex;align-items:center;justify-content:space-between;}
-  .brand{display:flex;align-items:center;gap:12px;}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none;cursor:pointer;}
   .brand .chip{width:42px;height:42px;border-radius:11px;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.15);}
   .brand .chip img{height:30px;width:auto;}
   .brand .name{font-family:var(--sans);font-weight:700;letter-spacing:1.5px;text-transform:uppercase;font-size:15px;color:#fff;transition:color .4s;}
@@ -316,10 +316,10 @@
 
 <header id="hdr">
   <div class="wrap nav">
-    <div class="brand">
+    <a class="brand" href="#hdr" aria-label="Bay Crest Media, back to top">
       <span class="chip"><img src="logo-mark.png" alt="Bay Crest Media"></span>
       <span class="name">Bay Crest Media</span>
-    </div>
+    </a>
     <nav class="nav-links">
       <a href="#how">How It Works</a>
       <a href="#samples">Samples</a>
