@@ -314,6 +314,21 @@
 </head>
 <body>
 
+<style>
+  /* Services dropdown (desktop) */
+  .nav-dd{position:relative;display:flex;align-items:center;}
+  .nav-dd-trig{display:inline-flex;align-items:center;gap:5px;cursor:pointer;}
+  .nav-dd-caret{font-size:9px;line-height:1;transition:transform .2s;}
+  .nav-dd:hover .nav-dd-caret,.nav-dd:focus-within .nav-dd-caret{transform:rotate(180deg);}
+  .nav-dd-menu{position:absolute;top:100%;left:50%;transform:translateX(-50%) translateY(9px);min-width:236px;background:#fff;border:1px solid var(--line);border-top:3px solid var(--gold);box-shadow:0 22px 44px -20px rgba(11,37,69,.45);padding:8px 0;opacity:0;visibility:hidden;transition:opacity .18s ease,transform .18s ease;z-index:250;}
+  .nav-dd:hover .nav-dd-menu,.nav-dd:focus-within .nav-dd-menu{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0);}
+  .nav-dd-menu a{display:block;padding:11px 24px;font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.2px;text-transform:none;color:var(--navy);white-space:nowrap;border:none;transition:background .15s,color .15s;}
+  .nav-dd-menu a:hover{background:rgba(11,37,69,.05);color:var(--gold);}
+  #svc-local-presence,#svc-reviews,#svc-websites,#svc-content{scroll-margin-top:90px;}
+  /* Services sub-items (mobile) */
+  .mobile-menu a.mm-sub{padding-left:18px;font-size:11.5px;text-transform:none;letter-spacing:.3px;color:var(--muted);}
+  .mobile-menu a.mm-sub:before{content:"— ";color:var(--gold);}
+</style>
 <header id="hdr">
   <div class="wrap nav">
     <a class="brand" href="#hdr" aria-label="Bay Crest Media, back to top">
@@ -324,7 +339,16 @@
       <a href="#how">How It Works</a>
       <a href="#samples">Samples</a>
       <a href="#about">About</a>
-      <a href="#plans">Services</a>
+      <div class="nav-dd">
+        <a href="#plans" class="nav-dd-trig">Services <span class="nav-dd-caret" aria-hidden="true">&#9662;</span></a>
+        <div class="nav-dd-menu">
+          <a href="#svc-reviews">Google Reviews</a>
+          <a href="#svc-websites">Websites</a>
+          <a href="#never-miss">Missed-Call Text-Back</a>
+          <a href="#svc-content">Social Content Plans</a>
+          <a href="#svc-local-presence">Local Presence Package</a>
+        </div>
+      </div>
       <a href="#faq">FAQ</a>
       <a href="/answers.html">Answers</a>
     </nav>
@@ -338,6 +362,11 @@
     <a href="#samples">Samples</a>
     <a href="#about">About</a>
     <a href="#plans">Services</a>
+    <a class="mm-sub" href="#svc-reviews">Google Reviews</a>
+    <a class="mm-sub" href="#svc-websites">Websites</a>
+    <a class="mm-sub" href="#never-miss">Missed-Call Text-Back</a>
+    <a class="mm-sub" href="#svc-content">Social Content Plans</a>
+    <a class="mm-sub" href="#svc-local-presence">Local Presence Package</a>
     <a href="#faq">FAQ</a>
     <a href="/answers.html">Answers</a>
   </div>
@@ -436,6 +465,65 @@
   </div>
 </section>
 
+<style>
+  .nml{background:var(--navy);color:#fff;padding:100px 0;}
+  .nml .wrap{max-width:1080px;margin:0 auto;padding:0 24px;}
+  .nml .head{text-align:center;margin-bottom:42px;}
+  .nml .head .label{color:var(--gold-light);}
+  .nml .head h2{font-family:var(--serif);font-weight:600;font-size:clamp(32px,4.6vw,50px);color:#fff;margin-top:14px;letter-spacing:-.5px;line-height:1.06;}
+  .nml .head p{color:#c3d0e2;margin:14px auto 0;font-size:17px;max-width:600px;}
+  .nml-risk{max-width:720px;margin:0 auto 44px;text-align:center;font-family:var(--serif);font-style:italic;font-size:clamp(19px,2.4vw,24px);line-height:1.5;color:var(--gold-light);}
+  .nml-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:900px;margin:0 auto;}
+  .nml-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);padding:34px 30px;}
+  .nml-ico{width:44px;height:44px;color:var(--gold-light);margin-bottom:18px;}
+  .nml-ico svg{width:100%;height:100%;}
+  .nml-card h3{font-family:var(--serif);font-weight:600;font-size:24px;color:#fff;margin-bottom:12px;letter-spacing:-.2px;}
+  .nml-card p{color:#c3d0e2;font-size:15.5px;line-height:1.7;}
+  .nml-foot{max-width:760px;margin:46px auto 0;text-align:center;}
+  .nml-price{font-family:var(--serif);font-size:44px;font-weight:600;color:#fff;line-height:1;letter-spacing:-1px;}
+  .nml-price b{color:var(--gold-light);font-style:italic;}
+  .nml-price span{font-family:var(--sans);font-size:16px;font-weight:500;color:#9fb0c8;letter-spacing:0;}
+  .nml-foot > p{color:#c3d0e2;font-size:15.5px;margin:16px auto 0;max-width:560px;}
+  .nml-cta{display:inline-block;margin-top:26px;padding:15px 42px;background:var(--gold);color:var(--navy);font-family:var(--sans);font-weight:700;font-size:12.5px;letter-spacing:2px;text-transform:uppercase;transition:background .2s,transform .15s;}
+  .nml-cta:hover{background:var(--gold-light);transform:translateY(-2px);}
+  .nml-note{text-align:center;color:#8496b0;font-size:12.5px;margin:22px auto 0;max-width:600px;line-height:1.6;}
+  @media(max-width:720px){.nml-grid{grid-template-columns:1fr;}.nml{padding:74px 0;}}
+</style>
+
+<section class="nml" id="never-miss">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="label">Never Miss a Lead</span>
+      <h2>Answer every lead, even when you can't pick up.</h2>
+      <p>In real estate, the agent who responds first usually wins the client. We make sure that's you, day or night, across your phone and your website.</p>
+    </div>
+
+    <div class="nml-risk reveal">
+      Studies of lead response find agents who reply within five minutes are far more likely to reach a lead than those who wait an hour. And most people who hit an unanswered line never call back. They just call the next name on the list.
+    </div>
+
+    <div class="nml-grid">
+      <div class="nml-card reveal">
+        <div class="nml-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+        <h3>Missed-Call Text-Back</h3>
+        <p>When a call goes unanswered, the caller gets an instant, friendly text: "Sorry we missed you, how can we help?" You catch the lead even while you're mid-showing, and they never feel ignored.</p>
+      </div>
+      <div class="nml-card reveal">
+        <div class="nml-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><circle cx="8.5" cy="10" r="1" fill="currentColor" stroke="none"/><circle cx="12" cy="10" r="1" fill="currentColor" stroke="none"/><circle cx="15.5" cy="10" r="1" fill="currentColor" stroke="none"/></svg></div>
+        <h3>24/7 AI Chat</h3>
+        <p>A smart assistant that answers questions, qualifies buyers by budget and timeline, and books tours around the clock, on your website, Facebook, or Google messages. It hands you a warm lead instead of a visitor who bounced.</p>
+      </div>
+    </div>
+
+    <div class="nml-foot reveal">
+      <div class="nml-price">From <b>$99</b><span>/mo</span></div>
+      <p>Add it to any plan, or fold it into a full lead-capture system alongside your reviews. We build it, connect it to your own number and site, and manage it for you.</p>
+      <a href="#intake" class="nml-cta">See if it fits your business</a>
+      <div class="nml-note">It catches and acknowledges every lead the moment it comes in. Closing them is still your magic, we just make sure you get the chance.</div>
+    </div>
+  </div>
+</section>
+
 <section class="plans" id="plans">
   <div class="wrap">
     <div class="head reveal">
@@ -444,7 +532,7 @@
       <p>Start with what you need most. Everything is month to month, cancel anytime.</p>
     </div>
 
-    <div class="website-offer reveal">
+    <div class="website-offer reveal" id="svc-local-presence">
       <div class="wo-head">
         <span class="wo-label">The popular combination</span>
         <h3>The Local Presence Package</h3>
@@ -468,7 +556,7 @@
       </div>
     </div>
 
-    <div class="website-offer reveal" style="margin-top:24px;">
+    <div class="website-offer reveal" style="margin-top:24px;" id="svc-reviews">
       <div class="wo-head">
         <span class="wo-label">Google Reviews</span>
         <h3>Want more Google reviews?</h3>
@@ -492,7 +580,7 @@
       </div>
     </div>
 
-    <div class="website-offer reveal" style="margin-top:24px;">
+    <div class="website-offer reveal" style="margin-top:24px;" id="svc-websites">
       <div class="wo-head">
         <span class="wo-label">Websites</span>
         <h3>Need a website, too?</h3>
@@ -532,7 +620,7 @@
       </div>
     </div>
 
-    <div class="wo-subhead" style="text-align:center;opacity:.7;margin:48px 0 18px;">Social Content Plans</div>
+    <div class="wo-subhead" id="svc-content" style="text-align:center;opacity:.7;margin:48px 0 18px;">Social Content Plans</div>
     <div class="grid-plans">
       <div class="plan reveal">
         <h3>Starter</h3>
@@ -681,6 +769,7 @@
         <label>Which package(s) are you interested in?</label>
         <div class="pkg-grid">
           <label class="pkg pkg-full"><input type="checkbox" name="Packages" value="Local Presence Package"><span><b>Local Presence Package</b><small>Our most popular option. A custom website and Google review management working together, one to look the part, one to keep the trust coming in. $1,697 to set up, then $179 a month.</small></span></label>
+          <label class="pkg pkg-full"><input type="checkbox" name="Packages" value="Missed-Call Text-Back"><span><b>Missed-Call Text-Back</b><small>When you can't answer, your business instantly texts the caller back so the lead doesn't move on to the next agent. From $99 a month. Ask about adding 24/7 AI chat.</small></span></label>
           <label class="pkg"><input type="checkbox" name="Packages" value="Website (Standard)"><span><b>Website (Standard)</b><small>$1,497 one-time</small></span></label>
           <label class="pkg"><input type="checkbox" name="Packages" value="Website (Premium)"><span><b>Website (Premium)</b><small>$2,497 one-time</small></span></label>
           <label class="pkg"><input type="checkbox" name="Packages" value="Google Reviews (Standard)"><span><b>Google Reviews (Standard)</b><small>$97/mo</small></span></label>
