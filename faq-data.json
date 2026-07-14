@@ -27,7 +27,7 @@
     "category": "Billing",
     "group": "Billing",
     "question": "Can I bundle a website and reviews?",
-    "answer": "Yes. That's the Local Presence Package: your website plus review management together for $1,697 to set up and $179 a month. That's a Standard website with Basic Care, plus review management. It's a better rate than buying them separately, and honestly it's the combination I'd recommend for most local businesses. A site that looks the part, and a steady stream of fresh reviews pointing at it."
+    "answer": "Yes. That's the Local Presence Package: your website plus review management together for $1,697 to set up and $179 a month. That's a Standard website with Basic Care, plus review management. It's a better rate than buying them separately, and honestly it's the combination I'd recommend for most agents. A site that looks the part, and a steady stream of fresh reviews pointing at it."
   },
   {
     "category": "Billing",
@@ -489,7 +489,7 @@
     "category": "Website",
     "group": "Features on your site",
     "question": "Can you add live chat or an AI chatbot?",
-    "answer": "For a local business, I set you up with a clear \"call or text\" button that gets a customer talking to you fast, which tends to win more business than a bot and actually feels like you. I lean on that rather than a chatbot, but if there's a specific reason you want chat, tell me and we'll talk it through."
+    "answer": "Yes, this is one of my services now, the 24/7 AI Chat. It answers your visitors' questions, qualifies buyers by budget and timeline, and books a showing or hands you a warm lead, around the clock, whether that's on your website, your Facebook, or your Google messages. It pairs with Missed-Call Text-Back, so a lead who calls and reaches voicemail still gets an instant reply. Together they start at $99 a month. If you'd rather keep it simple with a clean call-or-text button instead, I can do that too. Just tell me what fits."
   },
   {
     "category": "Website",
@@ -646,6 +646,48 @@
     "group": "Support",
     "question": "What happens if I sell my business?",
     "answer": "Congratulations, first of all. You own your site, your domain, and your content, so it all transfers cleanly to the new owner if that's part of the deal, or we wind things down, whatever you need. I'll make the handoff smooth either way."
+  },
+  {
+    "category": "Never Miss A Lead",
+    "group": "Never Miss A Lead",
+    "question": "What is Missed-Call Text-Back?",
+    "answer": "When someone calls you and you can't pick up, they instantly get a friendly text back, something like \"Sorry we missed you, how can we help?\" So the lead doesn't just hang up and call the next agent. You catch them even when you're mid-showing or on the other line, and they never feel ignored."
+  },
+  {
+    "category": "Never Miss A Lead",
+    "group": "Never Miss A Lead",
+    "question": "What is the 24/7 AI Chat?",
+    "answer": "It's a smart assistant that answers questions on your website, your Facebook, or your Google messages, day or night. It handles the common questions, qualifies buyers by budget and timeline, and books a showing or hands you a warm lead. So a late-night visitor turns into a real lead instead of someone who clicked away."
+  },
+  {
+    "category": "Never Miss A Lead",
+    "group": "Never Miss A Lead",
+    "question": "Do I need a website for the AI chat?",
+    "answer": "No. If you have a website, the chat lives right on it. If you don't, or your brokerage site won't let you add it, the same assistant runs on your Facebook and Google messages instead. Either way you're covered."
+  },
+  {
+    "category": "Never Miss A Lead",
+    "group": "Never Miss A Lead",
+    "question": "What does Never Miss a Lead cost?",
+    "answer": "Missed-Call Text-Back is $99 a month on its own. Add the 24/7 AI Chat and it's $199 a month for both. If you're already a client on a website or reviews plan, you can add text-back for $49 a month. Month to month, cancel anytime."
+  },
+  {
+    "category": "Never Miss A Lead",
+    "group": "Never Miss A Lead",
+    "question": "How do you set it up?",
+    "answer": "I handle it. I connect it to your existing phone number and your website or social channels, we write the messages together, and you approve them before anything goes live. It usually takes a few days, and there's nothing technical for you to do."
+  },
+  {
+    "category": "Never Miss A Lead",
+    "group": "Never Miss A Lead",
+    "question": "Will it text people without permission, or feel spammy?",
+    "answer": "No. The text-back only replies to someone who just called you, that's a reply, not a cold text, and every message has a simple opt-out. You approve the wording first, and it always sounds like you, never robotic."
+  },
+  {
+    "category": "Never Miss A Lead",
+    "group": "Never Miss A Lead",
+    "question": "Can you guarantee I'll get more clients from this?",
+    "answer": "No, and anyone who promises that isn't being straight. What this does is make sure every lead who calls or messages you gets an instant response, so you get the chance to win them. Closing them is still your job, this just makes sure you don't lose them to a missed call."
   },
   {
     "category": "Content",
