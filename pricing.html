@@ -3,223 +3,172 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QQ0FFC29H9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-QQ0FFC29H9');
+</script>
 <title>Pricing | Bay Crest Media</title>
-<meta name="description" content="Simple, month-to-month pricing for Bay Crest Media: free reel builder, Google reviews, websites, missed-call text-back and AI chat, the Local Presence Package, and content plans. No contracts.">
-<link rel="canonical" href="https://www.baycrestmedia.com/pricing.html">
+<meta name="description" content="Simple, honest pricing for Bay Area real estate agents. See where you fit in the growth system: win more listings, never lose a lead, and generate repeat business.">
 <link rel="icon" href="logo-mark.png">
+<link rel="canonical" href="https://www.baycrestmedia.com/pricing.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root{
     --navy:#0b2545;--navy-2:#13315c;--gold:#c8a04b;--gold-light:#e6c885;
-    --ink:#17202f;--muted:#62707f;--bg:#fdfcfa;--line:#eae4d8;
+    --ink:#17202f;--muted:#62707f;--bg:#fdfcfa;--line:#eae4d8;--panel:#f5f3ef;
     --serif:'Cormorant Garamond',Georgia,serif;--sans:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
   }
   *{box-sizing:border-box;margin:0;padding:0;}
-  body{font-family:var(--sans);color:var(--ink);background:var(--navy);line-height:1.65;-webkit-font-smoothing:antialiased;}
-  a{color:inherit;text-decoration:none;}
+  html{scroll-behavior:smooth;}
+  body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.65;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 24px;}
+  a{text-decoration:none;color:inherit;}
+  .ey{font-family:var(--sans);text-transform:uppercase;letter-spacing:3px;font-size:11px;font-weight:700;color:var(--gold);}
+  h1,h2,h3{font-family:var(--serif);font-weight:600;color:var(--navy);letter-spacing:-.4px;line-height:1.14;}
 
-  .topbar{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20;}
-  .topbar .in{max-width:1000px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;}
-  .topbar .brand{display:flex;align-items:center;gap:10px;}
-  .topbar img{height:32px;}
-  .topbar .nm{font-weight:800;letter-spacing:1.5px;text-transform:uppercase;font-size:13px;color:var(--navy);}
-  .topbar .back{font-size:13px;font-weight:600;color:var(--muted);}
-  .topbar .back:hover{color:var(--gold);}
+  .btn{display:inline-block;font-family:var(--sans);font-weight:700;font-size:13px;letter-spacing:2px;text-transform:uppercase;padding:15px 32px;transition:transform .15s,background .2s;}
+  .btn-gold{background:var(--gold);color:var(--navy);}
+  .btn-gold:hover{background:var(--gold-light);transform:translateY(-2px);}
 
-  .masthead{background:linear-gradient(135deg,var(--navy),var(--navy-2));color:#fff;text-align:center;padding:56px 24px 50px;}
-  .masthead .label{font-family:var(--sans);text-transform:uppercase;letter-spacing:3px;font-size:11px;font-weight:600;color:var(--gold-light);}
-  .masthead h1{font-family:var(--serif);font-weight:700;font-size:clamp(36px,5vw,52px);letter-spacing:-.5px;margin:10px 0 10px;}
-  .masthead p{color:#c3d0e2;font-size:16px;max-width:560px;margin:0 auto;}
+  /* topbar */
+  .topbar{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:30;}
+  .topbar .in{max-width:1000px;margin:0 auto;padding:15px 24px;display:flex;align-items:center;justify-content:space-between;}
+  .logo{font-family:var(--serif);font-weight:700;font-size:20px;color:var(--navy);letter-spacing:-.3px;}
+  .logo b{color:var(--gold);}
+  .topbar nav a{font-size:13px;font-weight:600;color:var(--ink);margin-left:22px;}
+  .topbar nav a:hover{color:var(--gold);}
+  .topbar nav a.cta{background:var(--gold);color:var(--navy);padding:9px 16px;}
+  .topbar nav a.cta:hover{background:var(--gold-light);}
+  @media(max-width:640px){.topbar nav a.home{display:none;}}
 
-  /* jump nav */
-  .jump{background:#fff;border-bottom:1px solid var(--line);padding:14px 24px;text-align:center;position:sticky;top:61px;z-index:19;}
-  .jump a{display:inline-block;font-size:13px;font-weight:600;color:var(--navy);padding:6px 12px;margin:2px;border:1px solid var(--line);border-radius:30px;transition:all .15s;}
-  .jump a:hover{border-color:var(--gold);color:var(--gold);}
+  /* masthead */
+  .masthead{background:linear-gradient(135deg,var(--navy),var(--navy-2));color:#fff;text-align:center;padding:76px 24px 70px;}
+  .masthead .ey{color:var(--gold-light);}
+  .masthead h1{color:#fff;font-size:clamp(38px,6vw,62px);margin:14px 0 16px;}
+  .masthead p{color:#c3d0e2;font-size:17px;max-width:600px;margin:0 auto;line-height:1.6;}
 
-  .page{max-width:920px;margin:0 auto;padding:20px 24px 70px;}
+  /* outcome section */
+  section{padding:70px 0;}
+  .out .ey{margin-bottom:8px;}
+  .out h2{font-size:clamp(26px,3.6vw,38px);margin-bottom:12px;max-width:720px;}
+  .out .prob{font-size:16.5px;color:var(--muted);max-width:640px;line-height:1.6;}
+  .panel{border:1px solid var(--line);margin-top:30px;background:#fff;}
+  .svc{display:flex;align-items:baseline;justify-content:space-between;gap:20px;padding:20px 26px;border-bottom:1px solid var(--line);}
+  .svc:last-child{border-bottom:none;}
+  .svc .s-name{font-weight:700;font-size:15.5px;color:var(--navy);}
+  .svc .s-desc{font-size:13.5px;color:var(--muted);margin-top:2px;max-width:520px;}
+  .svc .s-price{font-family:var(--serif);font-size:21px;color:var(--navy);font-weight:600;white-space:nowrap;text-align:right;}
+  .svc .s-price small{font-family:var(--sans);font-size:13px;color:var(--muted);font-weight:500;}
+  .devnote{margin-top:18px;border-left:3px solid var(--gold);background:var(--panel);padding:18px 22px;font-size:14.5px;color:var(--ink);line-height:1.6;}
+  .devnote b{color:var(--navy);}
 
-  /* uniform service section */
-  .svc{background:#fff;border:1px solid var(--line);border-top:3px solid var(--gold);padding:40px 42px;margin-top:24px;box-shadow:0 14px 36px -26px rgba(11,37,69,.4);scroll-margin-top:130px;}
-  .svc.best{border-top-color:var(--gold);box-shadow:0 18px 44px -24px rgba(200,160,75,.55);}
-  .svc-top{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap;}
-  .svc .ey{font-family:var(--sans);text-transform:uppercase;letter-spacing:2px;font-size:11px;font-weight:700;color:var(--gold);}
-  .svc h2{font-family:var(--serif);font-weight:600;font-size:29px;color:var(--navy);margin:8px 0 8px;letter-spacing:-.3px;line-height:1.12;}
-  .svc .lead{color:var(--muted);font-size:15px;max-width:620px;}
-  .best-badge{background:var(--gold);color:var(--navy);font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;padding:6px 12px;white-space:nowrap;align-self:flex-start;}
-  .free-badge{background:var(--navy);color:#fff;font-size:12px;font-weight:800;letter-spacing:1px;text-transform:uppercase;padding:8px 16px;white-space:nowrap;align-self:flex-start;}
-  .fr-video-center{text-align:center;margin:28px 0 6px;}
-  .fr-video-center video{width:240px;max-width:72%;border-radius:12px;box-shadow:0 14px 34px rgba(11,37,69,.28);background:#000;display:block;margin:0 auto;}
-  .tiers{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-top:24px;}
-  .tier{border:1px solid var(--line);padding:20px 20px;background:var(--bg);}
-  .tier .tn{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);}
-  .tier .tp{font-family:var(--serif);font-size:30px;color:var(--navy);font-weight:600;line-height:1;margin:6px 0 8px;letter-spacing:-.5px;}
-  .tier .tp small{font-family:var(--sans);font-size:13px;color:var(--muted);font-weight:500;letter-spacing:0;}
-  .tier p{font-size:13px;color:var(--muted);line-height:1.55;}
-  .svc-foot{margin-top:24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:20px;}
-  .svc-foot .note{font-size:13px;color:var(--muted);max-width:520px;}
-  .cta{display:inline-block;padding:13px 30px;background:var(--gold);color:var(--navy);font-weight:700;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;transition:background .2s,transform .15s;white-space:nowrap;}
-  .cta:hover{background:var(--gold-light);transform:translateY(-2px);}
-  .value-band{background:linear-gradient(135deg,var(--navy),var(--navy-2));color:#fff;padding:26px 30px;margin:26px 0 6px;}
-  .value-band h3{font-family:var(--serif);font-weight:600;font-size:23px;color:#fff;margin:0 0 10px;letter-spacing:-.3px;line-height:1.18;}
-  .value-band p{color:#d7e0ee;font-size:14.5px;line-height:1.6;margin:0;max-width:640px;}
-  .value-band .kill{margin-top:14px;font-size:13.5px;color:var(--gold-light);font-weight:600;}
-  .tier .setline{font-size:13px;color:var(--navy);font-weight:700;line-height:1.4;margin-bottom:2px;}
-  .tier ul{list-style:none;margin:10px 0 0;padding:0;display:flex;flex-direction:column;gap:7px;}
-  .tier li{position:relative;padding-left:20px;font-size:12.5px;color:var(--ink);line-height:1.4;}
-  .tier li::before{content:"\2713";position:absolute;left:0;top:0;color:var(--gold);font-weight:800;}
-  .setdef{font-size:13px;color:var(--muted);margin-top:20px;padding:14px 18px;background:var(--bg);border-left:3px solid var(--gold);line-height:1.6;}
+  /* dark section variant */
+  .dark{background:var(--navy);color:#fff;}
+  .dark h2{color:#fff;}
+  .dark .prob{color:#c3d0e2;}
+  .dark .panel{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.14);}
+  .dark .svc{border-color:rgba(255,255,255,.12);}
+  .dark .svc .s-name{color:#fff;}
+  .dark .svc .s-desc{color:#9fb2cf;}
+  .dark .devnote{background:rgba(200,160,75,.12);border-left-color:var(--gold);color:#e9eef6;}
+  .dark .devnote b{color:var(--gold-light);}
+  .panelbg{background:var(--panel);}
 
-  .foot-terms{text-align:center;color:#c3d0e2;font-size:13px;margin-top:40px;line-height:1.6;}
-  footer{text-align:center;color:#93a6c4;font-size:13px;padding:26px 24px;border-top:1px solid rgba(255,255,255,.1);}
+  /* final cta */
+  .get{background:linear-gradient(135deg,var(--navy),var(--navy-2));color:#fff;text-align:center;}
+  .get h2{color:#fff;font-size:clamp(26px,3.6vw,38px);}
+  .get p{color:#c3d0e2;font-size:17px;max-width:560px;margin:14px auto 0;line-height:1.6;}
+  .get .btn{margin-top:28px;}
 
-  @media(max-width:640px){.svc{padding:30px 24px;}.jump{display:none;}}
+  .terms{text-align:center;color:var(--muted);font-size:13px;padding:30px 24px;border-top:1px solid var(--line);}
+  footer{background:#081a30;color:#8ea3c2;text-align:center;padding:28px 24px;font-size:13px;}
+  footer b{color:#fff;}
 </style>
 </head>
 <body>
 
 <div class="topbar">
   <div class="in">
-    <a class="brand" href="/"><img src="logo-mark.png" alt="Bay Crest Media"><span class="nm">Bay Crest Media</span></a>
-    <a class="back" href="/">&larr; Back to site</a>
+    <a class="logo" href="/">Bay Crest <b>Media</b></a>
+    <nav>
+      <a class="home" href="/">Home</a>
+      <a class="cta" href="/#get">Free Lead Flow Review</a>
+    </nav>
   </div>
 </div>
 
 <div class="masthead">
-  <div class="label">Pricing</div>
+  <div class="ey">Pricing</div>
   <h1>Simple, honest pricing.</h1>
-  <p>Everything is month to month. No contracts, no setup surprises, and you always talk to me directly.</p>
+  <p>This isn't a catalog. It's where you fit in the growth system, and what it costs to start. Month to month, no long contracts.</p>
 </div>
 
-<div class="jump">
-  <a href="#free-reel">Free Reels</a>
-  <a href="#reviews">Google Reviews</a>
-  <a href="#never-miss">Never Miss a Lead</a>
-  <a href="#websites">Websites</a>
-  <a href="#local-presence">Local Presence</a>
-  <a href="#content">Content</a>
-</div>
+<!-- WIN MORE LISTINGS -->
+<section class="out">
+  <div class="wrap">
+    <div class="ey">01 &middot; Win More Listings</div>
+    <h2>Look like the obvious choice when a seller checks you out.</h2>
+    <p class="prob">Sellers vet you long before they ever call. A sharp website, a steady stream of strong reviews, and a credible online presence make you the easy yes.</p>
+    <div class="panel">
+      <div class="svc"><div><div class="s-name">Website Build</div><div class="s-desc">A custom, premium site that makes clients trust you before they call. Yours to keep.</div></div><div class="s-price">from $1,497</div></div>
+      <div class="svc"><div><div class="s-name">Review Management</div><div class="s-desc">A steady stream of 5-star reviews on the platforms that matter, Google and Zillow, handled for you.</div></div><div class="s-price">from $97<small>/mo</small></div></div>
+      <div class="svc"><div><div class="s-name">Local Presence Package</div><div class="s-desc">Your website and your reviews working together. The combination most agents want, for less than buying them apart.</div></div><div class="s-price">$1,697<small> setup, then $179/mo</small></div></div>
+    </div>
+  </div>
+</section>
 
-<div class="page">
+<!-- NEVER LOSE A LEAD -->
+<section class="out dark">
+  <div class="wrap">
+    <div class="ey">02 &middot; Never Lose a Lead</div>
+    <h2>Every call and message answered, even while you're showing a home.</h2>
+    <p class="prob">The lead that calls while you're mid-showing goes to whoever answers first. We make sure that's you, automatically, so a slow reply never costs you a deal.</p>
+    <div class="panel">
+      <div class="svc"><div><div class="s-name">Missed-call text back</div><div class="s-desc">When you can't pick up, the caller instantly gets a text so they don't move on to the next agent.</div></div></div>
+      <div class="svc"><div><div class="s-name">24/7 Lead Response</div><div class="s-desc">New inquiries get an immediate, friendly response day or night, and get routed straight to you.</div></div></div>
+      <div class="svc"><div><div class="s-name">Instant follow-up &amp; routing</div><div class="s-desc">Every call, text, and form is captured and followed up the moment it lands.</div></div></div>
+    </div>
+    <div class="devnote"><b>Currently in development.</b> We're building a streamlined lead response system that follows up with new inquiries instantly and keeps conversations moving while you're busy with clients. Pricing will vary based on your phone, messaging volume, and setup, and we'll recommend the simplest option during your Free Lead Flow Review.</div>
+  </div>
+</section>
 
-  <section class="svc free-special" id="free-reel">
-    <div class="svc-top">
-      <div><span class="ey">Free Reel Builder</span><h2>Make a scroll-stopping listing reel. Free, easy, and under a minute.</h2><p class="lead">Add your photos and video, drone shots, walkthroughs, anything you've got, and get back a polished vertical reel with music, smooth transitions, and your branding built in. It looks professionally edited, and it's ready to post to Instagram, TikTok, and Reels. Free to try, no account needed.</p></div>
+<!-- GENERATE REPEAT BUSINESS -->
+<section class="out panelbg">
+  <div class="wrap">
+    <div class="ey">03 &middot; Generate Repeat Business</div>
+    <h2>Your past clients stay close, and send their friends.</h2>
+    <p class="prob">Most of your future business is sitting in your past-client list. We keep you in front of them, so the referrals and repeat deals keep coming without you lifting a finger.</p>
+    <div class="panel">
+      <div class="svc"><div><div class="s-name">Referral automation</div><div class="s-desc">Gentle, well-timed nudges that turn happy past clients into a steady flow of referrals.</div></div></div>
+      <div class="svc"><div><div class="s-name">Client follow-up</div><div class="s-desc">Quarterly market updates and check-ins that keep you top of mind between deals.</div></div></div>
+      <div class="svc"><div><div class="s-name">Home anniversary touches</div><div class="s-desc">Birthday and home-anniversary messages that remind past clients you're still their agent.</div></div></div>
     </div>
-    <div class="fr-video-center">
-      <video poster="img/reel-poster.jpg" controls muted autoplay loop playsinline preload="metadata">
-        <source src="listing-reel-sample.mp4" type="video/mp4">
-        Your browser can't play this video.
-      </video>
-    </div>
-    <div class="svc-foot"><div class="note">The price and street address are always left off, so every reel stays compliance-aware.</div><a class="cta" href="https://reels.baycrestmedia.com/reel-builder" target="_blank" rel="noopener">Always free</a></div>
-  </section>
+    <div class="devnote"><b>Coming soon.</b> This layers onto your system once your foundation is running. Pricing is sized to your database and needs, and we'll walk you through it during your Free Lead Flow Review.</div>
+  </div>
+</section>
 
-  <section class="svc" id="reviews">
-    <div class="svc-top">
-      <div><span class="ey">Google Reviews</span><h2>Collect more 5-star reviews, automatically</h2><p class="lead">We invite every client to leave a review through the systems you already use, monitor what comes in, and reply each week. You get more reviews without chasing anyone.</p></div>
-    </div>
-    <div class="tiers">
-      <div class="tier"><div class="tn">Standard</div><div class="tp">$97<small> /mo</small></div><p>Invite every client, weekly replies, a calm draft reply to anything negative, and a monthly summary.</p></div>
-      <div class="tier"><div class="tn">Premium</div><div class="tp">$249<small> /mo</small></div><p>For high volume. Everything in Standard, more hands-on, with heavier review flow and faster replies.</p></div>
-      <div class="tier"><div class="tn">Setup</div><div class="tp">$299</div><p>One-time launch: profile cleanup, your review link, manager access, and a first-month reactivation push.</p></div>
-    </div>
-    <div class="svc-foot"><div class="note">We ask every client, never gate reviews, and never buy or fake them.</div><a class="cta" href="/#intake">Get a quote</a></div>
-  </section>
+<!-- FINAL CTA -->
+<section class="get">
+  <div class="wrap">
+    <div class="ey" style="color:var(--gold-light);">Where do you start?</div>
+    <h2>Not sure which system you need?</h2>
+    <p>Every business is different. We'll review your current lead flow and recommend the simplest place to start, no pressure and no obligation.</p>
+    <a class="btn btn-gold" href="/#get">Get my free lead flow review</a>
+  </div>
+</section>
 
-  <section class="svc" id="never-miss">
-    <div class="svc-top">
-      <div><span class="ey">Never Miss a Lead</span><h2>Turn missed calls into customers</h2><p class="lead">Missed-call text-back plus a 24/7 AI chat, so a lead who calls or messages you always gets an instant answer, even when you can't pick up.</p></div>
-    </div>
-    <div class="tiers">
-      <div class="tier"><div class="tn">Text-Back</div><div class="tp">$99<small> /mo</small></div><p>When you can't answer, the caller instantly gets a friendly text back so they don't move on.</p></div>
-      <div class="tier"><div class="tn">+ 24/7 AI Chat</div><div class="tp">$199<small> /mo</small></div><p>Adds a smart assistant that answers on your website, Facebook, or Google messages, day or night.</p></div>
-      <div class="tier"><div class="tn">Add-on</div><div class="tp">$49<small> /mo</small></div><p>For current website or reviews clients. Add text-back to your plan, no setup.</p></div>
-    </div>
-    <div class="svc-foot"><div class="note">We set it up on your own number and channels, and you approve every message first.</div><a class="cta" href="/#intake">Get a quote</a></div>
-  </section>
+<p class="terms">Everything is month to month, cancel anytime. You always work directly with Jason, no agencies, no handoffs.</p>
 
-  <section class="svc" id="websites">
-    <div class="svc-top">
-      <div><span class="ey">Websites</span><h2>A site that turns visitors into clients</h2><p class="lead">Custom, fast, and mobile-first. Built, hosted, and kept current so it never goes dark on you. Yours to keep.</p></div>
-    </div>
-    <div class="tiers">
-      <div class="tier"><div class="tn">Standard build</div><div class="tp">$1,497</div><p>One clean, focused page built to convert. Your services, story, reviews, and contact.</p></div>
-      <div class="tier"><div class="tn">Premium build</div><div class="tp">$2,497</div><p>A fuller multi-page site. More sections, more content, and custom design work.</p></div>
-      <div class="tier"><div class="tn">Basic Care</div><div class="tp">$97<small> /mo</small></div><p>Hosting, security, backups, lead alerts kept working, and minor edits.</p></div>
-      <div class="tier"><div class="tn">Premium Care</div><div class="tp">$149<small> /mo</small></div><p>Everything in Basic, plus real content updates and priority turnaround.</p></div>
-    </div>
-    <div class="svc-foot"><div class="note">The build is one-time; the care plan is monthly. Not sure which fits? We'll help you pick.</div><a class="cta" href="/#intake">Get a quote</a></div>
-  </section>
-
-  <section class="svc best" id="local-presence">
-    <div class="svc-top">
-      <div><span class="ey">Local Presence Package</span><h2>Your website and your reviews, working together</h2><p class="lead">Your website makes a great first impression. Your Google reviews build trust before the first conversation. Together, they help more buyers and sellers choose you, all while saving money compared to purchasing each service separately.</p></div>
-      <span class="best-badge">Best Value</span>
-    </div>
-    <div class="tiers">
-      <div class="tier"><div class="tn">Setup, one-time</div><div class="tp">$1,697</div><p>A Standard website build plus your review system launch. About $99 less than separate.</p></div>
-      <div class="tier"><div class="tn">Then monthly</div><div class="tp">$179<small> /mo</small></div><p>Basic Care for your site plus ongoing review management. About $15 a month less than separate.</p></div>
-    </div>
-    <div class="svc-foot"><div class="note">Every service still stands on its own, no bundle required.</div><a class="cta" href="/#intake">Get a quote</a></div>
-  </section>
-
-  <section class="svc" id="content">
-    <div class="svc-top">
-      <div><span class="ey">Social Content</span><h2>Content, done for you</h2><p class="lead">Posts, reels, and emails written in your voice, built from your listings and your local know-how. On the Done For You plan, we even schedule and post it for you.</p><p class="lead" style="margin-top:12px;">The free reel builder makes one reel. These plans keep your whole month full, and on Done For You we post it all for you too.</p></div>
-    </div>
-    <div class="value-band">
-      <h3>You'll have more marketing than you can use. That's the point.</h3>
-      <p>Most agents run dry after a couple of posts. You'll have the opposite problem. One listing becomes weeks of content: a branded video reel, posts for wherever you already are, and an email to your database. You won't use every piece, and you're not supposed to. You pick what fits and you're never scrambling for something to put up.</p>
-      <p class="kill">Only post on one or two platforms? Even better. You'll have more than enough to stay consistent where it counts, and the reel and the email do the real work no matter where you post.</p>
-    </div>
-    <div class="tiers">
-      <div class="tier">
-        <div class="tn">Starter</div><div class="tp">$997<small> /mo</small></div>
-        <div class="setline">2 content sets a month</div>
-        <ul>
-          <li>A branded reel for each listing, up to 2 a month</li>
-          <li>A ready-to-send email to your database</li>
-          <li>Weeks of varied posts per topic, no repeats</li>
-          <li>Never goes quiet between listings</li>
-          <li>Written with Fair Housing in mind, price and address left out</li>
-          <li>Delivered ready to post</li>
-        </ul>
-      </div>
-      <div class="tier">
-        <div class="tn">Content Engine</div><div class="tp">$2,000<small> /mo</small></div>
-        <div class="setline">4 content sets a month, about one a week</div>
-        <ul>
-          <li>A branded reel for each listing, up to 4 a month</li>
-          <li>A ready-to-send email to your database</li>
-          <li>Weeks of varied posts per topic, no repeats</li>
-          <li>Never goes quiet between listings</li>
-          <li>Written with Fair Housing in mind, price and address left out</li>
-          <li>Monthly strategy call</li>
-          <li>Delivered ready to post</li>
-        </ul>
-      </div>
-      <div class="tier">
-        <div class="tn">Done For You</div><div class="tp">$2,500<small> /mo</small></div>
-        <div class="setline">Everything in Content Engine, fully handled</div>
-        <ul>
-          <li>We schedule and post everything for you</li>
-          <li>You just approve, we do the rest</li>
-          <li>Your marketing completely off your plate</li>
-        </ul>
-      </div>
-    </div>
-    <p class="addon-note" style="font-size:13px;color:var(--muted);margin-top:18px;line-height:1.55;">Have more listings than your plan covers? Extra listing reels are available as an add-on, just ask.</p>
-    <div class="setdef">A content set is one topic (a listing, a market update, a neighborhood spotlight) turned into a batch of ready-to-post content: about a dozen posts shaped for your platforms, plus an email for your database. Listing topics also come with a branded video reel. More sets means more fresh topics across the month, so nothing repeats. No new listing that month? We use a market update, neighborhood spotlight, or a buyer or seller tip instead, so every set is full either way.</div>
-    <div class="svc-foot"><div class="note">Not an ads agency. We keep you visible and credible with steady content. No paid ads, no guaranteed leads. Content is written to be compliance-aware; your broker should give it a final look.</div><a class="cta" href="/#intake">Get a quote</a></div>
-  </section>
-
-  <p class="foot-terms">Everything is month to month, cancel anytime. You work directly with me, Jason, no agencies or handoffs. Prices are before any usage costs like text messages, which are small and always explained first.</p>
-
-</div>
-
-<footer>Bay Crest Media &middot; Marketing for real estate agents &middot; San Francisco Bay Area</footer>
+<footer>
+  <b>Bay Crest Media</b> &middot; Growth systems for Bay Area real estate agents<br>
+  (650) 260-8084 &middot; jason@baycrestmedia.com
+</footer>
 
 </body>
 </html>
