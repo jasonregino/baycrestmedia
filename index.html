@@ -381,5 +381,30 @@
   (function(){var s=document.querySelectorAll('.hero-slide');if(s.length<2)return;var i=0;
   setInterval(function(){s[i].classList.remove('active');i=(i+1)%s.length;s[i].classList.add('active');},4500);})();
 </script>
+<script>
+  // Additive: also send lead form submissions to GHL (fire-and-forget). Does NOT touch the Web3Forms email flow.
+  (function(){
+    var f = document.querySelector('form.form');
+    if(!f) return;
+    var HOOK = 'https://services.leadconnectorhq.com/hooks/qzIoV5UQJF7FjTNGrv5p/webhook-trigger/9384a182-f53b-49c6-aefb-b1bfcb2882ae';
+    f.addEventListener('submit', function(){
+      try{
+        var fd = new FormData(f);
+        var data = new URLSearchParams({
+          name: fd.get('name') || '',
+          email: fd.get('email') || '',
+          phone: fd.get('phone') || '',
+          challenge: fd.get('challenge') || '',
+          sms_consent_transactional: fd.get('sms_consent_transactional') ? 'Yes' : 'No',
+          sms_consent_marketing: fd.get('sms_consent_marketing') ? 'Yes' : 'No',
+          source: 'baycrestmedia.com Lead Flow Review'
+        });
+        if(navigator.sendBeacon){ navigator.sendBeacon(HOOK, data); }
+        else{ fetch(HOOK, {method:'POST', mode:'no-cors', keepalive:true, headers:{'Content-Type':'application/x-www-form-urlencoded'}, body:data.toString()}); }
+      }catch(e){}
+      // no preventDefault: the normal Web3Forms submission proceeds unchanged
+    });
+  })();
+</script>
 </body>
 </html>
