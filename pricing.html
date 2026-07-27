@@ -89,6 +89,28 @@
   .terms{text-align:center;color:var(--muted);font-size:13px;padding:30px 24px;border-top:1px solid var(--line);}
   footer{background:#081a30;color:#8ea3c2;text-align:center;padding:28px 24px;font-size:13px;}
   footer b{color:#fff;}
+  .pkg{border:1px solid var(--line);background:#fff;margin-top:30px;}
+  .pkg .ptop{display:flex;align-items:baseline;justify-content:space-between;gap:20px;padding:22px 26px;border-bottom:1px solid var(--line);}
+  .pkg .pname{font-family:var(--serif);font-weight:600;font-size:23px;color:var(--navy);letter-spacing:-.3px;}
+  .pkg .pdesc{font-size:14px;color:var(--muted);margin-top:5px;max-width:540px;line-height:1.55;}
+  .pkg .pprice{font-family:var(--serif);font-size:22px;color:var(--navy);font-weight:600;white-space:nowrap;text-align:right;}
+  .pkg .pprice small{font-family:var(--sans);font-size:13px;color:var(--muted);font-weight:500;}
+  .pkg .pprice .soon{font-family:var(--sans);font-size:13.5px;color:var(--muted);font-weight:600;}
+  .incl{padding:20px 26px;}
+  .incl h4{font-family:var(--sans);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);margin-bottom:13px;}
+  .incl ul{list-style:none;}
+  .incl li{position:relative;padding-left:26px;margin-bottom:11px;font-size:15px;color:var(--ink);line-height:1.5;}
+  .incl li:last-child{margin-bottom:0;}
+  .incl li::before{content:"";position:absolute;left:0;top:7px;width:11px;height:11px;border-radius:50%;background:var(--gold);}
+  .entry{margin-top:16px;font-size:14.5px;color:var(--muted);}
+  .entry b{color:var(--navy);}
+  .dark .pkg{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.14);}
+  .dark .pkg .ptop{border-color:rgba(255,255,255,.12);}
+  .dark .pkg .pname{color:#fff;}
+  .dark .pkg .pdesc{color:#9fb2cf;}
+  .dark .incl li{color:#e9eef6;}
+  .dark .pkg .pprice .soon{color:var(--gold-light);}
+  .dark .entry{color:#9fb2cf;}
 </style>
 </head>
 <body>
@@ -115,10 +137,27 @@
     <div class="ey">01 &middot; Win More Listings</div>
     <h2>Look like the obvious choice when a seller checks you out.</h2>
     <p class="prob">Sellers vet you long before they ever call. A sharp website, a steady stream of strong reviews, and a credible online presence make you the easy yes.</p>
-    <div class="panel">
-      <div class="svc"><div><div class="s-name">Website Build</div><div class="s-desc">A custom, premium site that makes clients trust you before they call. Yours to keep.</div></div><div class="s-price">from $1,497</div></div>
-      <div class="svc"><div><div class="s-name">Review Management</div><div class="s-desc">A steady stream of 5-star reviews on the platforms that matter, Google and Zillow, handled for you.</div></div><div class="s-price">from $97<small>/mo</small></div></div>
-      <div class="svc"><div><div class="s-name">Local Presence Package</div><div class="s-desc">Your website and your reviews working together. The combination most agents want, for less than buying them apart.</div></div><div class="s-price">$1,697<small> setup, then $179/mo</small></div></div>
+    <div class="pkg">
+      <div class="ptop">
+        <div>
+          <div class="pname">Local Presence Package</div>
+          <div class="pdesc">Your premium website and your review engine working as one, the combination most agents want, for less than buying the pieces apart.</div>
+        </div>
+        <div class="pprice">$1,697<small> setup, then $179/mo</small></div>
+      </div>
+      <div class="incl">
+        <h4>Everything included</h4>
+        <ul>
+          <li>A custom, premium website that makes sellers trust you before they call. Yours to keep.</li>
+          <li>Review Management on Google and Zillow, a steady stream of 5-star reviews, handled for you.</li>
+          <li>Ongoing local presence optimization, so you stay the obvious choice.</li>
+        </ul>
+      </div>
+    </div>
+    <p style="margin-top:28px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);">Also available on their own</p>
+    <div class="panel" style="margin-top:12px;">
+      <div class="svc"><div><div class="s-name">Website Build</div><div class="s-desc">A custom, premium site that makes sellers trust you before they call. Yours to keep.</div></div><div class="s-price">from $1,497</div></div>
+      <div class="svc"><div><div class="s-name">Review Management</div><div class="s-desc">A steady stream of 5-star reviews on Google and Zillow, handled for you.</div></div><div class="s-price">from $97<small>/mo</small></div></div>
     </div>
   </div>
 </section>
@@ -129,12 +168,24 @@
     <div class="ey">02 &middot; Never Lose a Lead</div>
     <h2>Every call and message answered, even while you're showing a home.</h2>
     <p class="prob">The lead that calls while you're mid-showing goes to whoever answers first. We make sure that's you, automatically, so a slow reply never costs you a deal.</p>
-    <div class="panel">
-      <div class="svc"><div><div class="s-name">Missed-call text back</div><div class="s-desc">When you can't pick up, the caller instantly gets a text so they don't move on to the next agent.</div></div></div>
-      <div class="svc"><div><div class="s-name">24/7 Lead Response</div><div class="s-desc">New inquiries get an immediate, friendly response day or night, and get routed straight to you.</div></div></div>
-      <div class="svc"><div><div class="s-name">Instant follow-up &amp; routing</div><div class="s-desc">Every call, text, and form is captured and followed up the moment it lands.</div></div></div>
+    <div class="pkg">
+      <div class="ptop">
+        <div>
+          <div class="pname">Never Lose a Lead System</div>
+          <div class="pdesc">One system that catches every call, text, and form the moment it lands, so a slow reply never costs you a deal.</div>
+        </div>
+        <div class="pprice"><span class="soon">Launching soon</span></div>
+      </div>
+      <div class="incl">
+        <h4>Everything included</h4>
+        <ul>
+          <li>Missed-call text back, so a caller you can't reach instantly hears from you instead of the next agent.</li>
+          <li>24/7 lead response that answers new inquiries day or night and routes them straight to you.</li>
+          <li>Instant follow-up on every call, text, and form, worked the moment it lands.</li>
+        </ul>
+      </div>
     </div>
-    <div class="devnote"><b>Currently in development.</b> We're building a streamlined lead response system that follows up with new inquiries instantly and keeps conversations moving while you're busy with clients. Pricing will vary based on your phone, messaging volume, and setup, and we'll recommend the simplest option during your Free Lead Flow Review.</div>
+    <p class="entry">This system is launching shortly. We'll share pricing tailored to your setup during your Free Lead Flow Review.</p>
   </div>
 </section>
 
@@ -144,12 +195,24 @@
     <div class="ey">03 &middot; Generate Repeat Business</div>
     <h2>Your past clients stay close, and send their friends.</h2>
     <p class="prob">Most of your future business is sitting in your past-client list. We keep you in front of them, so the referrals and repeat deals keep coming without you lifting a finger.</p>
-    <div class="panel">
-      <div class="svc"><div><div class="s-name">Referral automation</div><div class="s-desc">Gentle, well-timed nudges that turn happy past clients into a steady flow of referrals.</div></div></div>
-      <div class="svc"><div><div class="s-name">Client follow-up</div><div class="s-desc">Quarterly market updates and check-ins that keep you top of mind between deals.</div></div></div>
-      <div class="svc"><div><div class="s-name">Home anniversary touches</div><div class="s-desc">Birthday and home-anniversary messages that remind past clients you're still their agent.</div></div></div>
+    <div class="pkg">
+      <div class="ptop">
+        <div>
+          <div class="pname">Generate Repeat Business System</div>
+          <div class="pdesc">Most of your future business is already in your past-client list. This keeps you in front of them so referrals and repeat deals keep coming.</div>
+        </div>
+        <div class="pprice"><span class="soon">Coming soon</span></div>
+      </div>
+      <div class="incl">
+        <h4>Everything included</h4>
+        <ul>
+          <li>Referral automation, gentle well-timed nudges that turn happy clients into a steady flow of referrals.</li>
+          <li>Client follow-up with quarterly check-ins that keep you top of mind between deals.</li>
+          <li>Home-anniversary and birthday touches that remind past clients you're still their agent.</li>
+        </ul>
+      </div>
     </div>
-    <div class="devnote"><b>Coming soon.</b> This layers onto your system once your foundation is running. Pricing is sized to your database and needs, and we'll walk you through it during your Free Lead Flow Review.</div>
+    <p class="entry">This layers on once your foundation is running. We'll size it to your database during your Free Lead Flow Review.</p>
   </div>
 </section>
 
