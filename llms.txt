@@ -1,21 +1,23 @@
 # Bay Crest Media
 
-> Marketing for real estate agents in the San Francisco Bay Area. Websites, Google review management, listing content, and lead capture (missed-call text-back and 24/7 AI chat), so agents stay top of mind and spend their time selling homes. Run by one person, Jason, no agency.
+> Websites and growth systems for local businesses in the San Francisco Bay Area. We build and run the online systems that help a local business get found, capture leads, respond faster, and turn more inquiries into customers. Websites, Google review management, AI chat, 24/7 call answering, and lead follow-up. Run by one person, Jason. Not an agency.
 
 ## About
-Bay Crest Media is a local marketing service led by Jason, who spent 25 years in tech and support before starting it. It works mostly with real estate agents, and with other local Bay Area businesses too. Everything is month to month with no contracts, and clients work directly with Jason, no account managers or handoffs.
+Bay Crest Media is a local service business led by Jason Regino, who spent 25 years in technology and support before starting it. It works with local businesses across the Bay Area: trades, health and wellness practices, shops, restaurants, professional services. Everything is month to month with no contracts, and clients work directly with Jason. No account managers and no handoffs.
+
+Clients see the work before they pay for it. Websites come with a free preview and the AI receptionist comes with a free demo call.
 
 ## Services
-- Never Miss a Lead: missed-call text-back and 24/7 AI chat so no lead goes unanswered, on the phone, the website, or social messages. From $99 a month.
-- Google Review Management: an automated, honest system that invites every client and replies to reviews weekly. $97/mo standard, $249/mo premium, plus a $299 setup. Reviews are never bought, gated, or faked.
-- Websites: custom, fast, mobile-friendly sites that are built, hosted, and maintained. $1,497 or $2,497 to build, $97 or $149 a month for care.
-- Listing and Social Content: platform-ready posts and reels created from a quick update. $997 to $2,500 a month.
-- Local Presence Package: a website and review management together. $1,697 setup plus $179 a month.
+- Website: a custom, fast, mobile-first site that is built, hosted, and maintained, with click-to-call and a quote form that texts the owner. $1,497 to build, then $149 a month.
+- Google Review Management: every customer is asked the way Google allows, replies are written and posted as the business, and any low review triggers an alert and a calm draft before anything is published. $99 a month plus a $249 setup. Reviews are never bought, gated, or faked, and no number of reviews is ever guaranteed.
+- Growth: the website and review management together, plus 24/7 AI chat and missed-call text-back, run as one system. $1,497 setup, then $299 a month.
+- 24/7 AI Receptionist: answers every call day or night, separates emergencies from routine jobs, takes the caller's details, offers real open times, and books onto the calendar. Built for phone-heavy trades. $299 a month plus a $249 setup.
+
+## Pricing note
+San Mateo businesses are listed at a lower local rate through San Mateo Local, a separate local guide also run by Jason, who grew up in San Mateo. Everywhere else in the Bay Area is the standard rate above.
 
 ## Pages
 - Home: https://www.baycrestmedia.com/
-- Free sample reel for agents: https://www.baycrestmedia.com/sample-reel.html
-- Answers (FAQ): https://www.baycrestmedia.com/answers.html
 
 ## Contact
 - Email: jason@baycrestmedia.com
