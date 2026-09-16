@@ -11,11 +11,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <style>
-    /* Sample business site by Bay Crest Media. Bay Crest brand tokens (navy + gold),
-       Cormorant Garamond + Inter, per the baycrestmedia.com homepage. Demo business. */
+    /* Sample business site by Bay Crest Media, built to the Premium Website Standard.
+       CONTENT palette = this client's brand (dental: clean teal + warm honey).
+       FRAME palette (--bcm-*) = Bay Crest's own navy/gold, used ONLY on the sample
+       banner, the owner CTA block, and the footer, so the frame carries the Bay Crest
+       brand while the site itself looks bespoke. Cormorant Garamond + Inter, radius 0,
+       crossfade hero + hover-zoom cards per the standard. */
     :root{
-      --primary:#0b2545; --primary-deep:#081b33; --accent:#c8a04b; --accent-light:#e6c885;
-      --ink:#17202f; --muted:#62707f; --bg:#fdfcfa; --line:#eae4d8; --panel:#f5f1e8; --panel-2:#efe9dc; --cream:#f8f4ea;
+      /* content (client) palette */
+      --primary:#164B46; --primary-deep:#0E312E; --accent:#C08A3C; --accent-light:#E3C089;
+      --ink:#17202f; --muted:#62707f; --bg:#fdfcfa; --line:#eae4d8; --panel:#f2efe6; --panel-2:#eae5d8; --cream:#f6f1e6;
+      /* Bay Crest frame palette */
+      --bcm-navy:#0b2545; --bcm-navy-deep:#081b33; --bcm-gold:#c8a04b; --bcm-gold-light:#e6c885;
     }
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth;overflow-x:hidden}
@@ -27,23 +34,26 @@
     .eyebrow::before{content:"";width:26px;height:1px;background:var(--accent);display:inline-block}
     .eyebrow.center{justify-content:center}
     .btn{display:inline-flex;align-items:center;justify-content:center;font-family:'Inter',sans-serif;font-size:13px;font-weight:600;letter-spacing:2px;text-transform:uppercase;padding:15px 30px;border-radius:0;border:1px solid transparent;transition:background .25s ease,transform .2s ease,color .25s ease;cursor:pointer}
-    .btn-gold{background:var(--accent);color:#1a1206}
+    .btn-gold{background:var(--accent);color:#231605}
     .btn-gold:hover{background:var(--accent-light);transform:translateY(-2px)}
     .btn-outline{background:transparent;border:1px solid rgba(255,255,255,.55);color:#fff}
     .btn-outline:hover{background:rgba(255,255,255,.12);transform:translateY(-2px)}
-    .btn-dark{background:var(--primary);color:#eaf0f7}
-    .btn-dark:hover{background:var(--primary-deep);transform:translateY(-2px)}
+    .btn-bcmgold{background:var(--bcm-gold);color:#1a1206}
+    .btn-bcmgold:hover{background:var(--bcm-gold-light);transform:translateY(-2px)}
+    .btn-bcmoutline{background:transparent;border:1px solid rgba(255,255,255,.55);color:#fff}
+    .btn-bcmoutline:hover{background:rgba(255,255,255,.12);transform:translateY(-2px)}
     section{padding:118px 0}
     .sec-h{font-size:clamp(30px,4.6vw,52px);font-weight:600;color:var(--primary);margin:.5rem 0 0}
     .sec-lead{color:var(--muted);font-size:18px;max-width:44rem;margin-top:1rem}
-    .dark{background:var(--primary);color:#dfe7f0}
+    .dark{background:var(--primary);color:#dfeae7}
     .dark .sec-h{color:#fff}
-    .dark .sec-lead{color:#c4d0de}
+    .dark .sec-lead{color:#c4d6d1}
     .panel{background:var(--panel)}
     .reveal{opacity:0;transform:translateY(30px)}
     .reveal.in{opacity:1;transform:none;transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
     @media (prefers-reduced-motion:reduce){.reveal{opacity:1!important;transform:none!important}}
-    .sample-banner{position:relative;z-index:40;background:#081b33;color:#e6c885;font-size:12.5px;text-align:center;padding:.55rem 1.2rem;letter-spacing:.3px}
+    /* FRAME: Bay Crest brand */
+    .sample-banner{position:relative;z-index:40;background:var(--bcm-navy-deep);color:var(--bcm-gold-light);font-size:12.5px;text-align:center;padding:.55rem 1.2rem;letter-spacing:.3px}
     .sample-banner b{color:#f2ddb0}
     .sample-banner a{color:#fff;text-decoration:underline;text-underline-offset:2px}
     .nav{position:absolute;top:0;left:0;right:0;z-index:30;padding:1.5rem 0}
@@ -52,10 +62,17 @@
     .nav-right{display:flex;align-items:center;gap:1.6rem}
     .nav-link{font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.82)}
     .nav-link:hover{color:#fff}
-    .hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:url('img/dental-hero.jpg') center/cover no-repeat, #0b2545}
-    .hero-scrim{position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(8,27,51,.84) 0%,rgba(8,27,51,.5) 45%,rgba(8,27,51,.1) 100%),linear-gradient(0deg,rgba(8,27,51,.5),transparent 55%)}
+    /* Crossfade hero (signature element 1) */
+    .hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:var(--primary)}
+    .hero-slides{position:absolute;inset:0;z-index:0}
+    .hero-slide{position:absolute;inset:0;background-size:cover;background-position:center 42%;opacity:0;transition:opacity 1s ease}
+    .hero-slide.active{opacity:1}
+    .hero-scrim{position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(14,49,46,.84) 0%,rgba(14,49,46,.5) 45%,rgba(14,49,46,.12) 100%),linear-gradient(0deg,rgba(14,49,46,.5),transparent 55%)}
+    /* Gallery with hover-zoom (signature element 2) */
     .gallery{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;margin-top:2.4rem}
-    .gimg{flex:1 1 300px;max-width:calc(33.333% - .67rem);aspect-ratio:4/3;background-color:var(--panel-2);background-size:cover;background-position:center;border:1px solid var(--line);display:block}
+    .gimg{position:relative;overflow:hidden;flex:1 1 300px;max-width:calc(33.333% - .67rem);aspect-ratio:4/3;border:1px solid var(--line);background:var(--panel-2)}
+    .gimg .gz{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .5s cubic-bezier(.25,.46,.45,.94)}
+    .gimg:hover .gz{transform:scale(1.07)}
     @media(max-width:900px){.gimg{max-width:calc(50% - .5rem);flex-basis:calc(50% - .5rem)}}
     @media(max-width:560px){.gimg{max-width:100%;flex-basis:100%}}
     .atmo{padding:0;height:58vh;min-height:380px;max-height:620px;background-color:var(--panel-2);background-image:url('img/dental-interior.jpg');background-size:cover;background-position:center}
@@ -95,7 +112,7 @@
     .visit-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:2.4rem;margin-top:2.4rem}
     .mapframe{border:1px solid var(--line);overflow:hidden;min-height:360px}
     .mapframe iframe{width:100%;height:100%;min-height:360px;border:0;display:block}
-    .infocol .irow{display:flex;gap:.9rem;padding:.85rem 0;border-bottom:1px solid rgba(255,255,255,.14);font-size:15px}
+    .infocol .irow{display:flex;gap:.9rem;padding:.85rem 0;border-bottom:1px solid rgba(255,255,255,.16);font-size:15px}
     .infocol .irow .ik{color:var(--accent-light);font-weight:600;flex:none;width:84px;letter-spacing:.5px;text-transform:uppercase;font-size:12px;padding-top:2px}
     .rev{display:flex;align-items:center;gap:2rem;flex-wrap:wrap;margin-top:2rem;border:1px solid var(--line);background:#fff;padding:2rem 2.2rem}
     .rev-score{font-family:'Cormorant Garamond',serif;font-size:64px;font-weight:600;color:var(--accent);line-height:1}
@@ -120,17 +137,23 @@
     .ask{margin-top:2rem;border:1px solid var(--line);background:#fff;padding:2rem 2.2rem;max-width:48rem}
     .askbar{display:flex;gap:.6rem;margin-top:1.1rem;flex-wrap:wrap}
     .askbar input{flex:1 1 240px;padding:14px 16px;border:1px solid var(--line);border-radius:0;background:var(--bg);color:var(--ink);font:inherit;font-size:15px}
-    .askbar button{background:var(--primary);color:#eaf0f7;border:none;border-radius:0;padding:14px 24px;font-family:'Inter';font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;cursor:pointer}
+    .askbar button{background:var(--primary);color:#eaf3f0;border:none;border-radius:0;padding:14px 24px;font-family:'Inter';font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;cursor:pointer}
     .suggest{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}
     .suggest span{font-size:12.5px;color:var(--muted);border:1px solid var(--line);padding:.4rem .85rem}
     .tags{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.6rem}
-    .tags span{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--accent-light);border:1px solid rgba(230,200,133,.4);padding:.5rem 1rem}
-    .owner{text-align:center}
-    .owner .price{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--accent);margin-top:1.2rem}
-    footer{background:var(--primary-deep);color:#c4d0de;padding:70px 0 46px}
+    .tags span{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--accent-light);border:1px solid rgba(227,192,137,.4);padding:.5rem 1rem}
+    /* FRAME: Bay Crest CTA block */
+    .bcm-cta{background:var(--bcm-navy);text-align:center}
+    .bcm-cta .eyebrow{color:var(--bcm-gold);justify-content:center}
+    .bcm-cta .eyebrow::before{background:var(--bcm-gold)}
+    .bcm-cta .sec-h{color:#fff}
+    .bcm-cta .sec-lead{color:#c4d0de;margin-left:auto;margin-right:auto}
+    .bcm-cta .price{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--bcm-gold-light);margin-top:1.2rem}
+    /* FRAME: Bay Crest footer */
+    footer{background:var(--bcm-navy-deep);color:#c4d0de;padding:70px 0 46px}
     footer .fbrand{font-family:'Cormorant Garamond',serif;font-size:30px;color:#fff;font-weight:600}
-    footer .maint{display:inline-flex;align-items:center;gap:.4rem;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent-light);margin-top:1rem}
-    footer .maint a{color:var(--accent-light);text-decoration:underline;text-underline-offset:2px}
+    footer .maint{display:inline-flex;align-items:center;gap:.4rem;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--bcm-gold-light);margin-top:1rem}
+    footer .maint a{color:var(--bcm-gold-light);text-decoration:underline;text-underline-offset:2px}
     footer .fmeta{font-size:13.5px;color:#8996a6;margin-top:1rem;line-height:1.9}
     footer .fsoc{margin-top:1rem;display:flex;gap:1.4rem}
     footer .fsoc a{font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#c4d0de;font-weight:600}
@@ -151,8 +174,13 @@
 <body>
   <div class="sample-banner"><b>Sample website by <a href="/">Bay Crest Media</a></b> &middot; this is the kind of site we build for a dental practice. Crestview Dental is a demo, not a real client.</div>
 
-  <!-- HERO -->
+  <!-- HERO (crossfade) -->
   <section class="hero">
+    <div class="hero-slides">
+      <div class="hero-slide active" style="background-image:url('img/dental-hero.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('img/dental-interior.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('img/dental-2.jpg')"></div>
+    </div>
     <div class="hero-scrim"></div>
     <nav class="nav"><div class="nav-in">
       <span class="nav-brand">Crestview Dental</span>
@@ -192,9 +220,9 @@
       <h2 class="sec-h">Inside the practice</h2>
       <p class="sec-lead">Calm, modern, and spotless, from the front desk to the chair.</p>
       <div class="gallery">
-        <div class="gimg" style="background-image:url('img/dental-1.jpg')" role="img" aria-label="Crestview Dental reception and waiting area"></div>
-        <div class="gimg" style="background-image:url('img/dental-2.jpg')" role="img" aria-label="A modern, calm treatment room"></div>
-        <div class="gimg" style="background-image:url('img/dental-3.jpg')" role="img" aria-label="A gentle patient-care moment"></div>
+        <div class="gimg"><div class="gz" style="background-image:url('img/dental-1.jpg')" role="img" aria-label="Crestview Dental reception and waiting area"></div></div>
+        <div class="gimg"><div class="gz" style="background-image:url('img/dental-2.jpg')" role="img" aria-label="A modern, calm treatment room"></div></div>
+        <div class="gimg"><div class="gz" style="background-image:url('img/dental-3.jpg')" role="img" aria-label="A gentle patient-care moment"></div></div>
       </div>
     </div>
   </section>
@@ -349,18 +377,18 @@
     </div>
   </section>
 
-  <!-- OWNER CTA (Bay Crest pitch) -->
-  <section class="panel owner">
+  <!-- OWNER CTA (Bay Crest frame) -->
+  <section class="bcm-cta">
     <div class="wrap reveal" style="max-width:44rem;margin:0 auto">
       <span class="eyebrow center">Bay Crest Media</span>
       <h2 class="sec-h">Want a website like this for your business?</h2>
       <p class="sec-lead" style="margin:1.1rem auto 0">This is the kind of site Bay Crest Media builds for local businesses. We design it, build it on your own domain, and keep it running, hosting, edits, and all. You see a free preview before you pay anything.</p>
       <div class="price">Website &middot; $1,497 setup + $149/month &middot; month to month, no contract</div>
       <div style="margin-top:1.8rem;display:flex;gap:.9rem;flex-wrap:wrap;justify-content:center">
-        <a class="btn btn-gold" href="mailto:jason@baycrestmedia.com?subject=Website%20enquiry">Get your website</a>
-        <a class="btn btn-dark" href="/#offers">See all our services</a>
+        <a class="btn btn-bcmgold" href="mailto:jason@baycrestmedia.com?subject=Website%20enquiry">Get your website</a>
+        <a class="btn btn-bcmoutline" href="/#offers">See all our services</a>
       </div>
-      <p style="margin-top:1.1rem;font-size:16px;color:var(--muted)">Or call <a href="tel:+16502608084" style="color:var(--accent);font-weight:600">(650) 260-8084</a>. No pitch, no obligation.</p>
+      <p style="margin-top:1.1rem;font-size:16px;color:#c4d0de">Or call <a href="tel:+16502608084" style="color:var(--bcm-gold-light);font-weight:600">(650) 260-8084</a>. No pitch, no obligation.</p>
     </div>
   </section>
 
@@ -376,6 +404,15 @@
 
   <script>
   (function(){
+    // Crossfade hero
+    try{
+      var slides=document.querySelectorAll('.hero-slide');
+      if(slides.length>1 && !(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)){
+        var i=0;
+        setInterval(function(){ slides[i].classList.remove('active'); i=(i+1)%slides.length; slides[i].classList.add('active'); }, 4500);
+      }
+    }catch(e){}
+    // Reveal on scroll
     try{
       if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
       var els=document.querySelectorAll('.reveal');
