@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex, nofollow" />
-  <title>Sample Salon Website | Bay Crest Media</title>
-  <meta name="description" content="A sample website Bay Crest Media builds for a hair salon. Lumière Salon Studio is a demo, not a real client." />
+  <title>Sample Restaurant Website | Bay Crest Media</title>
+  <meta name="description" content="A sample website Bay Crest Media builds for a cafe or restaurant. Marlowe's Coffee & Kitchen is a demo, not a real client." />
   <meta name="theme-color" content="#0b2545" />
-  <link rel="preload" as="image" href="img/salon-hero.jpg" fetchpriority="high" />
+  <link rel="preload" as="image" href="img/eat-hero.jpg" fetchpriority="high" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -16,8 +16,8 @@
        CONTENT palette = this client's own brand. FRAME palette (--bcm-*) = Bay Crest's
        navy/gold, used ONLY on the sample banner, owner CTA block, and footer. */
     :root{
-      --primary:#332A31; --primary-deep:#241E23; --accent:#C08A7D; --accent-light:#E3C0B4;
-      --ink:#2A2529; --muted:#7A7076; --bg:#F7F3F0; --line:#E4DCD6; --panel:#EFE7DE; --panel-2:#E7DDD3; --cream:#F3ECE5;
+      --primary:#2E2018; --primary-deep:#1E140E; --accent:#C0894A; --accent-light:#E3BE86;
+      --ink:#26201B; --muted:#7A6E64; --bg:#FAF6F0; --line:#E7DDD0; --panel:#F1E9DC; --panel-2:#E9DFCF; --cream:#F5EEE1;
       --bcm-navy:#0b2545; --bcm-navy-deep:#081b33; --bcm-gold:#c8a04b; --bcm-gold-light:#e6c885;
     }
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -61,14 +61,14 @@
     .hero-slides{position:absolute;inset:0;z-index:0}
     .hero-slide{position:absolute;inset:0;background-size:cover;background-position:center 42%;opacity:0;transition:opacity 1s ease}
     .hero-slide.active{opacity:1}
-    .hero-scrim{position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(36,30,35,.85) 0%,rgba(36,30,35,.5) 45%,rgba(36,30,35,.12) 100%),linear-gradient(0deg,rgba(36,30,35,.5),transparent 55%)}
+    .hero-scrim{position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(30,20,14,.85) 0%,rgba(30,20,14,.5) 45%,rgba(30,20,14,.12) 100%),linear-gradient(0deg,rgba(30,20,14,.5),transparent 55%)}
     .gallery{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;margin-top:2.4rem}
     .gimg{position:relative;overflow:hidden;flex:1 1 300px;max-width:calc(33.333% - .67rem);aspect-ratio:4/3;border:1px solid var(--line);background:var(--panel-2)}
     .gimg .gz{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .5s cubic-bezier(.25,.46,.45,.94)}
     .gimg:hover .gz{transform:scale(1.07)}
     @media(max-width:900px){.gimg{max-width:calc(50% - .5rem);flex-basis:calc(50% - .5rem)}}
     @media(max-width:560px){.gimg{max-width:100%;flex-basis:100%}}
-    .atmo{padding:0;height:58vh;min-height:380px;max-height:620px;background-color:var(--panel-2);background-image:url('img/salon-interior.jpg');background-size:cover;background-position:center}
+    .atmo{padding:0;height:58vh;min-height:380px;max-height:620px;background-color:var(--panel-2);background-image:url('img/eat-interior.jpg');background-size:cover;background-position:center}
     .team{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2.4rem}
     .tmember{border:1px solid var(--line);background:#fff}
     .tphoto{aspect-ratio:4/5;background-color:var(--panel-2);background-size:cover;background-position:center 28%}
@@ -163,31 +163,31 @@
   </style>
 </head>
 <body>
-  <div class="sample-banner"><b>Sample website by <a href="/">Bay Crest Media</a></b> &middot; this is the kind of site we build for a salon. Lumi&egrave;re Salon Studio is a demo, not a real client.</div>
+  <div class="sample-banner"><b>Sample website by <a href="/">Bay Crest Media</a></b> &middot; this is the kind of site we build for a restaurant or cafe. Marlowe's Coffee & Kitchen is a demo, not a real client.</div>
 
   <section class="hero">
     <div class="hero-slides">
-      <div class="hero-slide active" style="background-image:url('img/salon-hero.jpg')"></div>
-      <div class="hero-slide" style="background-image:url('img/salon-interior.jpg')"></div>
-      <div class="hero-slide" style="background-image:url('img/salon-1.jpg')"></div>
+      <div class="hero-slide active" style="background-image:url('img/eat-hero.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('img/eat-interior.jpg')"></div>
+      <div class="hero-slide" style="background-image:url('img/eat-2.jpg')"></div>
     </div>
     <div class="hero-scrim"></div>
     <nav class="nav"><div class="nav-in">
-      <span class="nav-brand">Lumi&egrave;re Salon Studio</span>
+      <span class="nav-brand">Marlowe's Coffee & Kitchen</span>
       <div class="nav-right">
         <a class="nav-link" href="#services">Services</a>
         <a class="nav-link" href="#visit">Visit</a>
-        <a class="nav-link" href="#">(650) 555-0184</a>
+        <a class="nav-link" href="#">(650) 555-0132</a>
       </div>
     </div></nav>
     <div class="wrap">
       <div class="hero-in">
-        <span class="eyebrow">Downtown San Mateo &middot; Since 2016</span>
-        <h1>Lumi&egrave;re <em>Salon Studio</em></h1>
-        <p class="hero-sub">Color, cuts, and care in a chair that feels like a little escape. Find your stylist and book online in about thirty seconds.</p>
-        <div class="hero-rate">&#9733;&#9733;&#9733;&#9733;&#9733; &nbsp;4.9 &middot; 312 Google reviews</div>
+        <span class="eyebrow">Downtown San Mateo &middot; Since 2018</span>
+        <h1>Marlowe's <em>Coffee &amp; Kitchen</em></h1>
+        <p class="hero-sub">A neighborhood coffee house and an all-day, from-scratch kitchen. Single-origin espresso, real brunch, and a back patio that feels like a secret.</p>
+        <div class="hero-rate">&#9733;&#9733;&#9733;&#9733;&#9733; &nbsp;4.7 &middot; 312 Google reviews</div>
         <div class="hero-cta">
-          <a class="btn btn-gold" href="#services">Book your stylist</a>
+          <a class="btn btn-gold" href="#services">See the menu</a>
           <a class="btn btn-outline" href="#visit">Get directions</a>
         </div>
       </div>
@@ -197,23 +197,23 @@
 
   <section class="statement">
     <div class="wrap reveal">
-      <span class="eyebrow center">Since 2016</span>
-      <p>The kind of studio where they <em>learn your hair</em>, take their time with your color, and never rush you out of the chair.</p>
+      <span class="eyebrow center">Since 2018</span>
+      <p>The kind of place where the espresso is <em>single-origin</em>, the brunch is from scratch, and nobody rushes you off the patio.</p>
     </div>
   </section>
 
   <section class="panel">
     <div class="wrap reveal">
-      <span class="eyebrow">The work</span>
-      <h2 class="sec-h">Recent work</h2>
-      <p class="sec-lead">A few recent looks, color, cuts, and styles straight from the chair.</p>
+      <span class="eyebrow">A look inside</span>
+      <h2 class="sec-h">The place</h2>
+      <p class="sec-lead">Coffee, brunch, and a back patio worth staying for.</p>
       <div class="gallery">
-        <div class="gimg"><div class="gz" style="background-image:url('img/salon-1.jpg')" role="img" aria-label="Balayage and lived-in color result"></div></div>
-        <div class="gimg"><div class="gz" style="background-image:url('img/salon-6.jpg')" role="img" aria-label="Defined curls with caramel dimension"></div></div>
-        <div class="gimg"><div class="gz" style="background-image:url('img/salon-2.jpg')" role="img" aria-label="Bold copper color result"></div></div>
-        <div class="gimg"><div class="gz" style="background-image:url('img/salon-3.jpg')" role="img" aria-label="Dimensional blonde highlights"></div></div>
-        <div class="gimg"><div class="gz" style="background-image:url('img/salon-4.jpg')" role="img" aria-label="Fresh cut and blow-out style"></div></div>
-        <div class="gimg"><div class="gz" style="background-image:url('img/salon-5.jpg')" role="img" aria-label="Special-occasion updo"></div></div>
+        <div class="gimg"><div class="gz" style="background-image:url('img/eat-1.jpg')" role="img" aria-label="A latte on the counter"></div></div>
+        <div class="gimg"><div class="gz" style="background-image:url('img/eat-2.jpg')" role="img" aria-label="A from-scratch brunch plate"></div></div>
+        <div class="gimg"><div class="gz" style="background-image:url('img/eat-3.jpg')" role="img" aria-label="The coffee counter"></div></div>
+        <div class="gimg"><div class="gz" style="background-image:url('img/eat-4.jpg')" role="img" aria-label="The side patio"></div></div>
+        <div class="gimg"><div class="gz" style="background-image:url('img/eat-5.jpg')" role="img" aria-label="The back patio"></div></div>
+        <div class="gimg"><div class="gz" style="background-image:url('img/eat-6.jpg')" role="img" aria-label="A barista pulling espresso"></div></div>
       </div>
     </div>
   </section>
@@ -221,94 +221,68 @@
   <section id="services">
     <div class="wrap reveal">
       <span class="eyebrow">Services</span>
-      <h2 class="sec-h">Cuts, color, and care</h2>
-      <div class="menu-cat"><h3 class="menu-cat-h">Cut &amp; style</h3></div>
+      <h2 class="sec-h">On the menu</h2>
+      <div class="menu-cat"><h3 class="menu-cat-h">Coffee &amp; espresso</h3></div>
       <div class="menu">
-        <div class="mrow"><div><div class="mn">Cut &amp; style</div><div class="md">Consultation, cut, and finish</div></div><div class="mp">$75</div></div>
-        <div class="mrow"><div><div class="mn">Men's cut</div><div class="md">Cut and style, any length</div></div><div class="mp">$45</div></div>
-        <div class="mrow"><div><div class="mn">Blowout &amp; style</div><div class="md">Wash, blow-dry, and finish</div></div><div class="mp">$50</div></div>
-        <div class="mrow"><div><div class="mn">Special-occasion style</div><div class="md">Updos and event styling</div></div><div class="mp">$85</div></div>
+        <div class="mrow"><div><div class="mn">Drip coffee</div><div class="md">Rotating single-origin</div></div><div class="mp">$3.50</div></div>
+        <div class="mrow"><div><div class="mn">Latte</div><div class="md">Single or double</div></div><div class="mp">$5</div></div>
+        <div class="mrow"><div><div class="mn">Cortado</div><div class="md">Equal parts, no fuss</div></div><div class="mp">$4.50</div></div>
+        <div class="mrow"><div><div class="mn">Cold brew</div><div class="md">Slow-steeped, smooth</div></div><div class="mp">$5</div></div>
       </div>
-      <div class="menu-cat"><h3 class="menu-cat-h">Color</h3></div>
+      <div class="menu-cat"><h3 class="menu-cat-h">Breakfast &amp; brunch</h3></div>
       <div class="menu">
-        <div class="mrow"><div><div class="mn">Root touch-up</div><div class="md">Single-process, roots only</div></div><div class="mp">$85</div></div>
-        <div class="mrow"><div><div class="mn">All-over color</div><div class="md">Single-process, full head</div></div><div class="mp">$110</div></div>
-        <div class="mrow"><div><div class="mn">Balayage</div><div class="md">Hand-painted, natural grow-out</div></div><div class="mp">$180</div></div>
-        <div class="mrow"><div><div class="mn">Gloss &amp; toner</div><div class="md">Shine and tone refresh</div></div><div class="mp">$45</div></div>
+        <div class="mrow"><div><div class="mn">Avocado toast</div><div class="md">Sourdough, chili, lime</div></div><div class="mp">$12</div></div>
+        <div class="mrow"><div><div class="mn">Breakfast burrito</div><div class="md">Eggs, potato, cheddar, salsa</div></div><div class="mp">$13</div></div>
+        <div class="mrow"><div><div class="mn">Buttermilk pancakes</div><div class="md">Maple, whipped butter</div></div><div class="mp">$14</div></div>
+        <div class="mrow"><div><div class="mn">Farmer's omelette</div><div class="md">Seasonal veg, herbs</div></div><div class="mp">$15</div></div>
       </div>
-      <div class="menu-cat"><h3 class="menu-cat-h">Treatments</h3></div>
+      <div class="menu-cat"><h3 class="menu-cat-h">Lunch</h3></div>
       <div class="menu">
-        <div class="mrow"><div><div class="mn">Deep conditioning</div><div class="md">Added to any service</div></div><div class="mp">$35</div></div>
-        <div class="mrow"><div><div class="mn">Keratin smoothing</div><div class="md">Frizz-free for months</div></div><div class="mp">$250</div></div>
-        <div class="mrow"><div><div class="mn">Scalp treatment</div><div class="md">Detox and nourish</div></div><div class="mp">$40</div></div>
+        <div class="mrow"><div><div class="mn">Turkey club</div><div class="md">Roasted turkey, bacon, aioli</div></div><div class="mp">$14</div></div>
+        <div class="mrow"><div><div class="mn">Grain bowl</div><div class="md">Farro, greens, seasonal veg</div></div><div class="mp">$15</div></div>
+        <div class="mrow"><div><div class="mn">Soup &amp; half sandwich</div><div class="md">Daily soup, choice of half</div></div><div class="mp">$12</div></div>
       </div>
-      <p class="price-note">Starting prices. Final quote depends on length and detail, and we tell you before we start, never after.</p>
+      <p class="price-note">A taste of the menu. The full menu is on the site and changes with the season.</p>
     </div>
   </section>
 
   <section class="panel">
     <div class="wrap reveal">
-      <span class="eyebrow">Why locals stay</span>
+      <span class="eyebrow">Why locals love it</span>
       <h2 class="sec-h">What you can count on</h2>
       <div class="trust">
-        <div class="tcard"><div class="th">A real consultation</div><div class="tp">We talk through what actually suits your hair, your routine, and your budget before we touch a thing.</div></div>
-        <div class="tcard"><div class="th">Master colorists</div><div class="tp">Years behind the chair and real color training, and the same stylist each time if you want them.</div></div>
-        <div class="tcard"><div class="th">Clean and licensed</div><div class="tp">California-licensed cosmetologists and a fresh, sanitized station for every guest.</div></div>
-        <div class="tcard"><div class="th">Easy online booking</div><div class="tp">Book a specific stylist and time online in about thirty seconds, with a text reminder before your visit.</div></div>
+        <div class="tcard"><div class="th">A from-scratch kitchen</div><div class="tp">Brunch and lunch made in-house daily, with seasonal produce and real ingredients.</div></div>
+        <div class="tcard"><div class="th">Single-origin coffee</div><div class="tp">A rotating single-origin espresso program, pulled by baristas who actually care.</div></div>
+        <div class="tcard"><div class="th">The back patio</div><div class="tp">A tucked-away, dog-friendly patio that regulars treat like a second living room.</div></div>
+        <div class="tcard"><div class="th">All day, no rush</div><div class="tp">Open early through mid-afternoon, and nobody is going to hurry you out.</div></div>
       </div>
-      <div class="chips"><span class="chip">Est. 2016</span><span class="chip">Online booking</span><span class="chip">Color specialists</span><span class="chip">Licensed cosmetologists</span><span class="chip">Cash &amp; card</span><span class="chip">Parking nearby</span></div>
+      <div class="chips"><span class="chip">Dog-friendly patio</span><span class="chip">Single-origin espresso</span><span class="chip">From-scratch kitchen</span><span class="chip">Weekend brunch</span><span class="chip">Free wifi</span><span class="chip">Family-owned</span><span class="chip">Street parking</span></div>
     </div>
   </section>
 
 
-  <section>
-    <div class="wrap reveal">
-      <span class="eyebrow">The studio</span>
-      <h2 class="sec-h">Meet the stylists</h2>
-      <div class="team">
-        <div class="tmember">
-          <div class="tphoto" style="background-image:url('img/salon-team-1.jpg')"></div>
-          <div class="tname">Mara Ellison</div>
-          <div class="trole">Owner &amp; Master Colorist</div>
-          <div class="tspec">Balayage and lived-in color, and the one to see for a big change you'll still love in three months.</div>
-        </div>
-        <div class="tmember">
-          <div class="tphoto" style="background-image:url('img/salon-team-2.jpg')"></div>
-          <div class="tname">Simone Carter</div>
-          <div class="trole">Stylist &amp; Curls</div>
-          <div class="tspec">Curls, texture, and dimensional color. She reads your hair's natural pattern and works with it, not against it.</div>
-        </div>
-        <div class="tmember">
-          <div class="tphoto" style="background-image:url('img/salon-team-3.jpg')"></div>
-          <div class="tname">Dev Kapoor</div>
-          <div class="trole">Stylist &amp; Cuts</div>
-          <div class="tspec">Precision cuts and clean lines, and a genuinely relaxing chair. Great for a fresh restart.</div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section class="atmo" role="img" aria-label="Inside Lumi&egrave;re Salon Studio"></section>
+  <section class="atmo" role="img" aria-label="Inside Marlowe's Coffee & Kitchen"></section>
 
   <section>
     <div class="wrap reveal">
       <span class="eyebrow">Reputation</span>
-      <h2 class="sec-h">Loved by locals</h2>
+      <h2 class="sec-h">Loved by regulars</h2>
       <div class="rev">
-        <div class="rev-score">4.9</div>
+        <div class="rev-score">4.7</div>
         <div><div class="rev-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div class="rev-count">Based on 312 Google reviews</div></div>
         <a class="rev-link" href="#" onclick="return false">Read on Google &rarr;</a>
       </div>
       <div class="revcards">
-        <div class="revcard"><div class="rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="rc-quote">"Best balayage I've had in the Bay. She actually listened and my color still looks great two months later."</p><div class="rc-who">Alina R.<span>Google review</span></div></div>
-        <div class="revcard"><div class="rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="rc-quote">"Finally a salon that doesn't rush you. The consultation alone made me trust them with a big change."</p><div class="rc-who">Dana P.<span>Google review</span></div></div>
-        <div class="revcard"><div class="rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="rc-quote">"My color correction was in great hands. Kind, honest, and worth every minute."</p><div class="rc-who">Sofia M.<span>Google review</span></div></div>
+        <div class="revcard"><div class="rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="rc-quote">"The best latte in San Mateo and a brunch that actually lives up to the line. That patio is a hidden gem."</p><div class="rc-who">Erin C.<span>Google review</span></div></div>
+        <div class="revcard"><div class="rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="rc-quote">"From-scratch everything, and you can taste it. The breakfast burrito is worth the trip alone."</p><div class="rc-who">Marcus D.<span>Google review</span></div></div>
+        <div class="revcard"><div class="rc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="rc-quote">"My go-to work-from-cafe spot. Great coffee, fast wifi, and nobody rushes you."</p><div class="rc-who">Priya S.<span>Google review</span></div></div>
       </div>
       <p class="rev-note">On a live site, these are pulled from the business's real Google reviews, always the genuine ones.</p>
       <div style="margin-top:3.4rem"><span class="eyebrow">Local Perk</span><h2 class="sec-h">A welcome deal</h2></div>
       <div class="deal">
-        <div class="dt">&#9986; Free deep-conditioning treatment with your first color</div>
-        <div class="dm">Mention the website when you book.</div>
+        <div class="dt">&#9749; Free drip coffee with any brunch entree</div>
+        <div class="dm">Mention the website.</div>
       </div>
     </div>
   </section>
@@ -318,13 +292,13 @@
       <span class="eyebrow">Visit</span>
       <h2 class="sec-h">Find us</h2>
       <div class="visit-grid">
-        <div class="mapframe"><iframe loading="lazy" title="Map to Lumi&egrave;re Salon Studio" src="https://www.google.com/maps?q=120%20S%20B%20Street%2C%20San%20Mateo%2C%20CA%2094401&output=embed"></iframe></div>
+        <div class="mapframe"><iframe loading="lazy" title="Map to Marlowe's Coffee & Kitchen" src="https://www.google.com/maps?q=55%20E%203rd%20Avenue%2C%20San%20Mateo%2C%20CA%2094401&output=embed"></iframe></div>
         <div class="infocol">
-          <div class="irow"><span class="ik">Address</span><span>120 S B Street, San Mateo, CA 94401</span></div>
-          <div class="irow"><span class="ik">Phone</span><span>(650) 555-0184</span></div>
-          <div class="irow"><span class="ik">Hours</span><span>Tue&ndash;Sat 9a&ndash;7p<br>Sun 10a&ndash;5p &middot; Mon closed</span></div>
+          <div class="irow"><span class="ik">Address</span><span>55 E 3rd Avenue, San Mateo, CA 94401</span></div>
+          <div class="irow"><span class="ik">Phone</span><span>(650) 555-0132</span></div>
+          <div class="irow"><span class="ik">Hours</span><span>Daily 7a&ndash;3p<br>Weekend brunch till 2p</span></div>
           <div class="irow"><span class="ik">Area</span><span>Downtown San Mateo</span></div>
-          <div style="margin-top:1.6rem;display:flex;gap:.8rem;flex-wrap:wrap"><a class="btn btn-gold" href="#">Call</a><a class="btn btn-outline" href="https://www.google.com/maps?q=120%20S%20B%20Street%2C%20San%20Mateo%2C%20CA%2094401" target="_blank" rel="noopener">Directions</a></div>
+          <div style="margin-top:1.6rem;display:flex;gap:.8rem;flex-wrap:wrap"><a class="btn btn-gold" href="#">Call</a><a class="btn btn-outline" href="https://www.google.com/maps?q=55%20E%203rd%20Avenue%2C%20San%20Mateo%2C%20CA%2094401" target="_blank" rel="noopener">Directions</a></div>
         </div>
       </div>
     </div>
@@ -335,16 +309,16 @@
       <span class="eyebrow">Good to Know</span>
       <h2 class="sec-h">Frequently asked</h2>
       <div class="faq">
-        <details open><summary>Do I need a consultation before color?</summary><p>For a big change or a correction, yes, and it's free. For a root touch-up or trim, just book and come in.</p></details>
-        <details><summary>How do I book a specific stylist?</summary><p>Book online and pick your stylist and time, about thirty seconds. Or call the studio and we’ll set it up.</p></details>
-        <details><summary>Do you do color corrections?</summary><p>Yes. Color correction is by consultation so we can quote it honestly and plan the right number of sessions.</p></details>
-        <details><summary>Is there parking?</summary><p>Street parking on B Street and the city garage a block over on 2nd.</p></details>
+        <details open><summary>Do you take reservations?</summary><p>We are walk-in for tables. For larger groups, send us a note through the site and we will do our best.</p></details>
+        <details><summary>Is the patio dog-friendly?</summary><p>Yes, the back patio is dog-friendly and a local favorite. Water bowls are on us.</p></details>
+        <details><summary>When is brunch served?</summary><p>Brunch runs all morning, every day, with the full menu until we close at 3.</p></details>
+        <details><summary>Is there parking?</summary><p>Street parking on 3rd Avenue and the city garage a block over.</p></details>
       </div>
-      <div style="margin-top:3.4rem"><span class="eyebrow">Ask</span><h2 class="sec-h">Ask about Lumi&egrave;re</h2></div>
+      <div style="margin-top:3.4rem"><span class="eyebrow">Ask</span><h2 class="sec-h">Ask about Marlowe's</h2></div>
       <div class="ask">
         <p style="color:var(--muted)">Ask and get an answer from the business's verified information, hours, services, and location.</p>
-        <div class="askbar"><input type="text" placeholder="e.g. Do you do balayage on Saturdays?" aria-label="Ask about this business" /><button type="button">Ask</button></div>
-        <div class="suggest"><span>What are your hours?</span><span>How much is balayage?</span><span>Do you do color corrections?</span></div>
+        <div class="askbar"><input type="text" placeholder="e.g. Do you have oat milk?" aria-label="Ask about this business" /><button type="button">Ask</button></div>
+        <div class="suggest"><span>What are your hours?</span><span>Is the patio dog-friendly?</span><span>Do you do brunch on weekdays?</span></div>
       </div>
     </div>
   </section>
@@ -353,7 +327,7 @@
     <div class="wrap reveal" style="max-width:52rem;text-align:center;margin:0 auto">
       <span class="eyebrow center">Built for how people search now</span>
       <h2 class="sec-h">Found on Google, Maps, and AI</h2>
-      <p class="sec-lead" style="margin:1.2rem auto 0">People don’t just search Google anymore. They ask "where’s a good colorist near me?" on Maps, and more and more on AI tools. A site built this way gives search engines and AI systems a rich, structured, up-to-date source of truth about the salon.</p>
+      <p class="sec-lead" style="margin:1.2rem auto 0">People do not just search Google anymore. They ask "where is a good brunch spot near me?" on Maps, and more and more on AI tools. A site built this way gives search engines and AI systems a clear, structured source of truth about the cafe.</p>
       <div class="tags" style="justify-content:center"><span>SEO</span><span>Local SEO</span><span>AEO</span><span>GEO</span><span>Google &amp; Maps</span></div>
     </div>
   </section>
@@ -374,11 +348,11 @@
 
   <footer>
     <div class="wrap">
-      <div class="fbrand">Lumi&egrave;re Salon Studio</div>
+      <div class="fbrand">Marlowe's Coffee & Kitchen</div>
       <div class="maint">Sample site by <a href="/">Bay Crest Media</a></div>
-      <div class="fmeta">120 S B Street, Downtown San Mateo &middot; (650) 555-0184<br>Tue&ndash;Sat 9a&ndash;7p &middot; Sun 10a&ndash;5p</div>
-      <div class="fsoc"><a href="#" onclick="return false">Book online</a><a href="#" onclick="return false">Google</a></div>
-      <div class="fcopy">This is a sample page. Lumi&egrave;re Salon Studio is not a real business. Built by Bay Crest Media to show the design and structure we deliver.</div>
+      <div class="fmeta">55 E 3rd Avenue, Downtown San Mateo &middot; (650) 555-0132<br>Daily 7a&ndash;3p</div>
+      <div class="fsoc"><a href="#" onclick="return false">View menu</a><a href="#" onclick="return false">Google</a></div>
+      <div class="fcopy">This is a sample page. Marlowe's Coffee & Kitchen is not a real business. Built by Bay Crest Media to show the design and structure we deliver.</div>
     </div>
   </footer>
 
