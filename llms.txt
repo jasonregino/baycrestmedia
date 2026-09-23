@@ -15,6 +15,22 @@ Clients see the work before they pay for it. Websites come with a free preview a
 
 ## Pages
 - Home: https://www.baycrestmedia.com/
+- Sample sites by business type: https://www.baycrestmedia.com/samples/
+- Privacy: https://www.baycrestmedia.com/privacy.html
+- Terms: https://www.baycrestmedia.com/terms.html
+
+## Sample sites
+Complete, browsable sample websites, one for each kind of local business. They exist so an owner can see the actual work before talking to anyone, rather than judging from a portfolio screenshot. Every client also gets a free preview built for their own business before they pay anything.
+- Dental and health, Crestview Dental, for dentists, clinics and practices: https://www.baycrestmedia.com/samples/dental.html
+- Wellness and therapy, Cedar Wellness, for chiropractic, physical therapy, acupuncture and massage: https://www.baycrestmedia.com/samples/wellness.html
+- Hair and beauty, Lumiere Salon Studio, for salons, nails, spa and lashes: https://www.baycrestmedia.com/samples/salon.html
+- Home services and trades, Anchor Home Services, for plumbers, electricians and contractors: https://www.baycrestmedia.com/samples/trades.html
+- Fitness and studios, Cadence Fitness Studio, for gyms, pilates, yoga and martial arts: https://www.baycrestmedia.com/samples/fitness.html
+- Auto repair, Redwood Auto Care, for mechanics, detailing and tires: https://www.baycrestmedia.com/samples/auto.html
+- Barbershop, The Standard Barber Co., for barbers and grooming: https://www.baycrestmedia.com/samples/barber.html
+- Pet services, Wagsworth Pet Care, for grooming, day care and boarding: https://www.baycrestmedia.com/samples/pets.html
+- Professional services, Keystone Advisors, for accountants, offices and advisors: https://www.baycrestmedia.com/samples/professional.html
+- Restaurants and cafes, Marlowe's Coffee and Kitchen, for cafes, restaurants and bars: https://www.baycrestmedia.com/samples/eat.html
 
 ## Contact
 - Email: jason@baycrestmedia.com
